@@ -1,111 +1,124 @@
-.backgroundHome{
-    background-image: url(Subs/backgound.png);
-    background-size: 300px;
-background-attachment: fixed;
+.backgroundHome {
+  background-image: url(Subs/backgound.png);
+  background-size: 300px;
+  background-attachment: fixed;
 }
-.bocket  {
-   align-items: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
+
+.bocket {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
-.pic1{
-background-color: rgb(231, 238, 238);  
-border-radius: 5px;
+
+.pic1 {
+  background-color: rgb(231, 238, 238);
+  border-radius: 5px;
 
 }
-.Infobox  {
-border: 1px solid black;
-margin-left: auto;
-margin-right: auto;
+
+.Infobox {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
 
 }
+
 .Infobox th {
-border: 1px solid black;
+  border: 1px solid black;
 }
-.boxer12 th{
+
+.boxer12 th {
   border-radius: 10px;
 }
-.bigct th{
-    text-align: center;
-}
-.picelbook img{
-padding: 9px;
+
+.bigct th {
+  text-align: center;
 }
 
-.Charaicon th{
+.picelbook img {
+  padding: 9px;
+}
+
+.Charaicon th {
   border-radius: 10px;
 
   border: 1px solid black;
-  box-shadow: 3px 3px ;
-  
+  box-shadow: 3px 3px;
+
 }
 
-.Charaicon th img{
+.Charaicon th img {
   border-radius: 20px;
   border: 1px solid black;
 
 }
 
-.info{
+.info {
   margin-left: auto;
   margin-right: auto;
 }
-.pisc2{
+
+.pisc2 {
   border-radius: 10px;
 }
-.pisc1{
+
+.pisc1 {
   border-radius: 10px;
 }
-.bigct{
- 
-    background: white;
-    min-height: 500px;
-    width: 730px;
 
-     border: rgb(109, 105, 98) 4px solid;
+.bigct {
+
+  background: white;
+  min-height: 500px;
+  width: 730px;
+
+  border: rgb(109, 105, 98) 4px solid;
 
 }
-.cetri{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.cetri {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .dropbtn {
-    background-color: #000000;
-    color: white;
-    padding: 12px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-  }
+  background-color: #000000;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
 
-  .dropdown-content {
-    display: none;
-    position: relative;
-    background-color: #000000;
-    min-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
-  }
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
-  .dropdown-content a {
-    color: rgb(255, 205, 42);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
+.dropdown-content a {
+  color: rgb(255, 205, 42);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-  .dropdown-content a:hover {
-    background-color: #1f1f1f;
-  }
+.dropdown-content a:hover {
+  background-color: #1f1f1f;
+}
 
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .infotable td th {
-    border: 1px black solid;
-  }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.infotable td th {
+  border: 1px black solid;
+}

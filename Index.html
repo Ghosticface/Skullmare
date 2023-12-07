@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="skullicon.png">
+
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skullmare</title>
+    <style>
+         .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.575);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 4px 4px  rgba(0, 0, 0, 0.425);
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cclosebuttonandshit{
+            top: 10px;
+            cursor: pointer;
+            right: 10px;
+
+            position: absolute;
+           
+        }
+
+        .modal-content button {
+            background-color: #000000;
+            box-shadow: 2px 1px 1px black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .modal-content button:hover {
+            background-color: #ad1d1d;
+        }
+        a{
+            text-decoration: none;
+            color: white; opacity: 1.0;
+        }
+        a:hover{
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body style="background: url(Subs/backgound.png); background-size: 510px;">
+   <center>
+    <div id="Modalius" class="modal">
+        <div class="modal-content">
+            <span class="closebuttonandshit" onclick="close()">&times;</span>
+
+            <br>
+            <h1 style="color: red;">
+                <img src="pixels/handboard.png" alt="">
+                <img src="pixels/questionboard.png" alt="">
+                <img src="pixels/!stop.png" alt="">
+                WARNING!
+                 <img src="pixels/!stop.png" alt="">
+                 <img src="pixels/questionboard.png" alt="">
+                 <img src="pixels/handboard.png" alt="">
+                </h1>
+
+          <h4></h4>
+                <hr>
+                <img src="pixels/exclamation.png" alt="">
+                <img src="pixels/exclamation.png" alt="">
+                <img src="pixels/exclamation.png" alt="">
+                <div class="info" style="border: 1px solid black; width: 400px; padding: 10px; margin: auto;">
+                                          
+                                            
+                    <table class="Infobox">
+                        <tr>
+                            <th style=" background-color: rgb(199, 0, 0);color: white;">
+                                CONTENT WARNING:
+                            </th>
+                            <th>
+            please be responsible with the media that you consume, you are responsible for your own actions                                                    </th>
+                        </tr>
+                      
+                     
+                                                          
+                    </table>
+                </div>
+                <div style="margin-top: 20px;">
+                    <img src="pixels/exclamation.png" alt="">                                            <span style="color: red;">ALL THE CONTENTS ON THIS WEBSITE IS FOR 18+ VIEWERS/AUDIENCES </span><br>
+                    <img src="pixels/skullfrontfacing.png" alt="">   The content shared on this website is entirely fictional and does not portray or represent actual individuals or real-life events, Nor is it being endorsed<br>
+                    <img src="pixels/skullstraightside.png" alt=""> The creations shared on this website do not directly mirror the creator's morals, politics, or opinions. <br>
+                    <img src="pixels/skullsideway.png" alt=""> Contents might contains sensitive subjects, such as Dead Dove, Non-con, Torture, abuse etc, Viewing the content on this website is your choice, and the creator is not responsible for it.
+                 <br>   <img src="pixels/loveletterred.png" alt=""> Do not repost the websites content on other platforms, ofcourse profile pictures and headers are allowed with credit given
+</div>
+please be responsible with the media that you consume, you are responsible for your own actions                                                    </th>
+
+<br>
+            <button onclick="accept()">Accept</button>
+        </div>
+    </div>
+  
+
+    <img height="300px" src="Subs/title.png" alt=""> <br>
+    <img src="pixels/date.png" alt="">
+    <div style="background-color: rgba(0, 0, 0, 0.5); padding: 10px; width: 300px; border-radius: 20px; font-size: 20px;">
+        <a href="#" onclick="TOS()"> <p style="">OPEN <i class="fa-solid fa-dungeon"></i> </p></a>
+        <a href="Blog.html">        <p style="">BLOG <i class="fa-solid fa-pencil"></i></p></a>
+        <a href="">        <p style="">TWITTER <i class="fa-brands fa-x-twitter"> </i></p></a>
+        <a href="https://retrospring.net/@Ghosticus">        <p style="">RETROSPRING <i class="fa-solid fa-cloud"> </i></p> </a>
+    </div>
+   </center>
+   <script>
+    var modal = document.getElementById('Modalius');
+
+    function TOS() {
+        showModal();
+    }
+
+    function showModal() {
+        modal.style.display = 'flex';
+    }
+
+    function close() {
+        modal.style.display = 'none';
+    }
+
+    function accept() {
+      
+        window.location.href = 'Homefeed.html';
+    }
+</script>
+</body>
+</html>

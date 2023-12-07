@@ -2,60 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Skullmare</title>
+    <title>Your Page Title</title>
 </head>
+<body>
 
-<body class="backgroundHome">
+<!-- Your HTML elements -->
+<div id="Pechi">Hover over me (Pechi)</div>
+<div id="NoChar">Hover over me (NoChar)</div>
+<div id="textbox">This is the default text</div>
 
-    <center>
-    <table class="bocket">
-<tr>
-    <th>
-<div class="bigct">
+<!-- Your JavaScript code -->
+<script>
+    let textbox = document.getElementById("textbox");
 
-<h1 style="font-family: 'Lobster', sans-serif;"><i class="fa-solid fa-star"></i>UPDATES<i class="fa-solid fa-star"></i></h1>
+    const texts = {
+        Pechi : "This is pechi crazy right?",
+        NoChar : "This is NO ONE, fun fact, FUCK YOU.",
+    };
 
+    for (const id in texts){
+        const element = document.getElementById(id);
+        console.log(element);
+        element.addEventListener("pointerenter" , async (event) => {
+            document.getElementById("textbox").innerHTML = texts[id];
+        });
+        element.addEventListener("pointerleave" , async (event) =>{
+            document.getElementById("textbox").innerHTML = `this is a default text, change it later `;
+        });
+    };
+</script>
 
-<table class="cetri">
-        <div >
-<h1 style="position: relative; left: -20px;">Whats New!</h1>
-
-
-
-        </div>
-
-      
-
-
-            <img style="height: 200px;" src="Subs/copyrightlust.png" alt="">
-
- </div>
-
-        </div>
-        
-    </th>
-    
-</table>
-
-
-
-
-</div>
-
-    </th>
-</tr>
-
-
-
-    </table>
-    
-</center>
 </body>
 </html>

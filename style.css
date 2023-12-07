@@ -54,12 +54,37 @@
   border: 1px solid black;
 
 }
-
+.novir th{
+  padding: 10px;
+}
 .info {
   margin-left: auto;
   margin-right: auto;
 }
+.XER {
+  display: flex;
+  justify-content: space-around;
+  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+}
 
+.XER div {
+  text-align: center;
+}
+
+.XER div img:hover {
+  transform: rotate(-10deg); /* Adjust the rotate angle as needed */
+}
+
+.inforin th{
+  border: 1px solid black;
+  padding: 20px;
+  
+}
+.inforin img{
+  border: 1px solid rgb(255, 255, 255);
+ 
+  
+}
 .pisc2 {
   border-radius: 10px;
 }
@@ -122,3 +147,23 @@
 .infotable td th {
   border: 1px black solid;
 }
+.Book {
+  height: 812px;
+  width: 912px;
+  background: url(pixels/bigbiggerbook.png);
+  position:relative;
+  z-index: 1;
+}
+.Book2 {
+  height:812px;
+  width:912px;
+  background: url(pixels/bigbiggerbook.png);
+  position:relative;
+  z-index: 1;
+}
+
+.innerDiv {
+  position: absolute;
+  z-index: ;
+}
+

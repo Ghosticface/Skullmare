@@ -3,6 +3,11 @@
   background-size: 300px;
   background-attachment: fixed;
 }
+.background {
+  background-image: url(Subs/backgound2.png);
+  background-size: 300px;
+  background-attachment: fixed;
+}
 
 .bocket {
   align-items: center;
@@ -154,6 +159,7 @@
   position:relative;
   z-index: 1;
 }
+
 .Book2 {
   height:812px;
   width:912px;
@@ -161,6 +167,7 @@
   position:relative;
   z-index: 1;
 }
+
 
 .innerDiv {
   position: absolute;

@@ -167,6 +167,17 @@
   position:relative;
   z-index: 1;
 }
+.Book3 {
+  height: 672px;
+  width: 1202px;
+  background: url(pixels/characterbook2.png);
+  background-size: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+
+
 
 
 .innerDiv {

@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DEATHENIZE</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" type="image/x-icon" href="faviconnie.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Nanum+Brush+Script&family=Playfair+Display+SC:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+  .selectedLabel {
+      font-weight: bold;
+  }
+
+  
+
+        .buttonize a {
+    border-radius: 10px;
+
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.buttonize a:hover {
+    background-color: rgb(236, 173, 0);
+    color: rgb(0, 0, 0);
+
+}
+   
+        th .comment {
+            display: none;
+        }
+
+        th:hover .thought {
+            display: none;
+        }
+
+        th:hover .comment {
+            display: inline;
+        }
+
+        .menu th {
+            padding: 10px
+        }
+
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+        }
+
+        .iwillrot img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop img:hover {
+            transform: rotate(-20deg);
+
+
+        }
+
+        .Socialpop a img:hover {
+            animation: rotate-pulse 1s ease-in-out infinite;
+        }
+
+        @keyframes rotate-pulse {
+            0% {
+                transform: rotate(0deg) scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: rotate(180deg) scale(1.2);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(1);
+                opacity: 1;
+            }
+        }
+
+
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border: none;
+            font-size: 24px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .carousel-button-prev {
+            left: 0;
+        }
+
+        .carousel-button-next {
+            right: 0;
+        }
+
+        .carousel-slide img {
+            height: 500px;
+            border: 5px solid rgb(255, 255, 255);
+            outline: 5px solid rgb(0, 0, 0);
+            margin-top: 10px;
+
+        }
+        .flag img{
+            height: 20px;
+        }
+    </style>
+
+</head>
+
+<body class="HomeBG">
+    <center>
+        <div style="background: white; width: 935px; margin-top: -10px; ">
+            <div style="background: rgb(0, 0, 0); border-bottom-left-radius: 100px; border-to-left-radius">
+
+                <a href="TheDeathHomepage.html">
+                    <div id="top" class="Header"></div>
+                </a>
+            </div>
+            <div style=" margin-top: 40px;margin-bottom: 20px;" class="buttonize">
+                <a href="About.html">About DTNE</a>
+                <a href="Personages.html">Personage List</a>
+                <a href="CommissionList.html">Comission Faq</a>
+                <a href="RequestFaq.html">Fanbox Request</a>
+                <a href="Links-Bookmarks.html">Bookmarks</a>
+            </div>
+            
+
+            <div>
+                <img style="border-radius: 10px; margin-top:10px; border: 5px solid white;"
+                    src="Artwork/Illustrations/banner3.png" ; height="175px" alt="">
+                <div style="font-family: 'Nanum Brush Script', cursive;; font-size:30px; color: darkred">Het magere hein zwerft in de diepste nacht</div>
+            </div>
+
+            <div style="color: rgb(241, 157, 0); font-size: 20px">†</div>
+
+            <h1 style="font-size:40px ; font-family: 'Holtwood One SC', serif; transform: skew(10deg);"> <i
+                    class="fa-solid fa-star fa-spin-pulse" style="color:  rgb(241, 157, 0);"></i>N<span
+                    style="color: rgb(241, 157, 0); font-size: 50px;">e</span>w<span
+                    style="color: rgb(241, 157, 0);font-size: 50px;">e</span>s<span style="">t</span> to <span
+                    style="font-size: 50px; color:  rgb(241, 157, 0);">D</span>ea<span
+                    style="font-size: 50px; color:  rgb(241, 157, 0);">t</span>he<span
+                    style="color:  rgb(241, 157, 0); font-size: 50px;">n</span>ize<i class="fa-solid fa-star fa-spin-pulse"
+                    style="color:  rgb(241, 157, 0);"></i></h1>
+
+            <div style="padding-top: px;" class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="carousel-slide"><img src="Controlslider/slide8.png" alt="Slide "></div>
+                    <div class="carousel-slide"><img src="Controlslider/slide1.png" alt="Slide "></div>
+                    <div class="carousel-slide"><img src="Controlslider/slide5.png" alt="Slide "></div>
+                    <div class="carousel-slide"><img src="Controlslider/slide7.png" alt="Slide "></div>
+                </div>
+                <button class="carousel-button carousel-button-prev">&#10094;</button>
+                <button class="carousel-button carousel-button-next">&#10095;</button>
+            </div>
+
+            <div style="background:#000000;">
+                <h1
+                    style=";text-align: left; padding-left: 40px;padding-top: 20px;color: #ffffff; font-family: 'Press Start 2P', cursive;">
+                    Fun Contents ▼▼▼</h1>
+                <div class="iwillrot">
+                    <a href="StoriesAndStrips.html"><img src="Pixelart/storylogicon.png" alt=""></a>
+                    <a href="BunkersDagboek.html"><img src="Pixelart/bunkersdagboekicon.png" alt=""></a>
+                    <a href="OopComingSoon.html"><img src="Pixelart/desdodengraaficon.png" alt=""></a>
+                    <a href="BloedrijksMuseum.html"><img src="Pixelart/dtnmuseum.png" alt=""></a>
+                    <a href="RequestFaq.html"><img src="Pixelart/enclodeathpedie.png" alt=""></a>
+                    <a href="IllustrationPortfoliocurrent.html"><img src="Pixelart/galleryicon.png" alt=""></a>
+                    <a href="OopComingSoon.html"><img src="Pixelart/gameboyicon.png" alt=""></a>
+                    <a href="OopComingSoon.html"><img src="Pixelart/Novel.png" alt=""></a>
+                    <a href="OopComingSoon.html"><img src="Pixelart/vidcon.png" alt=""></a>
+                    <a href="DTNE18+.html"><img style="height: 60px;" src="Pixelart/warning.png" alt=""></a>
+                    <a href="Warning.html"><img  style="height: 60px;" src="Pixelart/warning2.png" alt=""></a>
+                    <br>
+
+                    <br>
+                    <div><i class="fa-solid fa-cross fa-spin-pulse"></i></div>
+                    <br>
+                    <!-- FC2 Counter  Starts here -->
+                    <script language="javascript" type="text/javascript"
+                        src="//counter1.fc2.com/views.php?id=38902614&main=1"></script><noscript><img
+                            src="//counter1.fc2.com/counter_now.php?id=38902614&main=1" /></noscript>
+                    <!-- FC2 Counter  Ends here -->
+                    <!-- FC2 Counter  Starts here -->
+                    <script language="javascript" type="text/javascript"
+                        src="//counter1.fc2.com/counter.php?id=38902614&main=1"></script><noscript><img
+                            src="//counter1.fc2.com/counter_img.php?id=38902614&main=1" /></noscript>
+                    <!-- FC2 Counter  Ends here -->
+                </div>
+
+            </div>
+
+            <table id="tophere" style=" border-spacing:20px; ">
+                <tr>
+                    <th
+                        style="border: rgb(0, 0, 0) 7px solid;border-radius: 10px; background: white; height: 100%; width: 650px">
+                        <h1 style="font-family: 'Playfair Display SC', serif;">▶ Topics <img src="Pixelart/frame.gif"
+                                alt=""></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 3 September 2023 14:02</div>
+Diary updated
+                        </div>
+                    <div style="" class="box">
+                        <div class="boxname">
+                            <i class="fa-solid fa-skull fa-spin-pulse"
+                            style="color: "></i></i> 2 September 2023 14:19
+                        </div>
+                        <img height="750px" src="Artwork/Illustrations/Happy600.jpg" alt="">
+                        </div>
+                    <div style="" class="box">
+                        <div class="boxname">
+                            <i class="fa-solid fa-skull fa-spin-pulse"
+                            style="color: "></i></i> 29 August 2023 21:54
+                        </div>
+                        
+                       <a href="11-XI-PRT.html"> <img style="height: 700px" src="CharacterPortraits/Michael.jpg" alt=""></a>
+<div>Roepnaam:Michael</div>
+                        </div>
+                    <div style=";" class="box">
+                        <div class="boxname">
+                            <i class="fa-solid fa-bars-progress"></i> 29 August 2023 21:54
+                        </div>
+                <div style="font-size: 30px;"> BloodBride X Y/N//marriage altar Illustration!<i class="fa-solid fa-skull fa-spin-pulse"
+                        style="color: #b80000;"></i>
+                </div>
+                <div>The poll will last for 3 days!</div>
+                <img style="height: 100px;" src="Artwork/Doodles/nn.png" alt="">
+                        <br>
+<button style="padding: 20px; margin: 20px; background-color: black; border: 1px solid black; border-radius: 20px;"><a
+style=" text-decoration: none; color: white;" href="https://linkto.run/p/SM0DXKIM">Vote Here!</a></button>
+                          <br>
+                          <div style="margin-bottom: 20px;">Personage Choice: Muertoz, Jack O lan, Diaz</div>
+</div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 28August 2023 16:38</div>
+Diary updated
+                        </div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 28 August 2023 16:32</div>
+                        <a href="comic-3.html"><img style="height: 1200px;" src="Comics/Vincent1.jpg" alt=""></a>
+                        </div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 27 August 2023 14:06</div>
+Diary updated
+                        </div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 26 August 2023 12:08</div>
+
+                        <a href="https://noree.uwu.ai/">
+                            
+                            <img style="height: 599px"
+                            src="Artwork/Illustrations/MMorin.jpg" alt="">
+                            <div>Fanart: https://noree.uwu.ai/</div>
+                            <div style="padding-bottom: 20px;">twitter:https://twitter.com/Noree_mii <i class="fa-brands fa-twitter fa-spin-pulse"></i></div>
+
+                           
+                           
+                        </a>
+</div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 25 August 2023 22:07</div>
+                    <div style="font-size: 30px;"> Butler  Illustration!<i class="fa-solid fa-skull fa-spin-pulse"
+                        style="color: #b80000;"></i>
+                </div>
+                <div>The poll will last for 3 days!</div>
+                <img style="height: 100px;" src="Artwork/Doodles/ButlerFitIcon.png" alt="">
+                        <br>
+<button style="padding: 20px; margin: 20px; background-color: black; border: 1px solid black; border-radius: 20px;"><a
+style=" text-decoration: none; color: white;" href="https://linkto.run/p/GALT9K5F">Vote Here!</a></button>
+                          <br>
+                          <div style="margin-bottom: 20px;">Personage Choice: Kerr, Klaus, Ran</div>
+</div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 25 August 2023 22:05</div>
+                    <div style="font-size: 30px;">Your age range?<i class="fa-solid fa-skull fa-spin-pulse"
+                        style="color: #b80000;"></i>
+                </div>
+                 analyzing, and data for better content <br>
+<button style="padding: 20px; margin: 20px; background-color: black; border: 1px solid black; border-radius: 20px;"><a>
+                          <br>
+                        <a
+style=" text-decoration: none; color: white;" href="https://poll-maker.com/poll4912912x1d5442A2-151">Participate here!</a></button>
+</div>
+                    <div class="box">
+                        <div class="boxname"><i class="fa-solid fa-skull"></i> 25 August 2023 22:04</div>
+                        <a href="4-IV-PRT.html">
+                            
+                            <img style="height: 500px"
+                            src="CharacterPortraits/manouvre.jpg" alt="">
+                          
+                           
+                           
+                        </a>
+                        <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Manouvre:Ren</div>
+                        </div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 23 August 2023 14:36</div>
+                            <div>Maid poll winner:Diaz, thank you all somuch for participating</div>
+
+                            <a href="A2.html">
+                                
+                                <img style="height: 700px"
+                                src="Artwork/Illustrations/Diazmaid.jpg" alt="">
+                              
+                               
+                               
+                            </a>
+</div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 22 August 2023 18:01</div>
+Diary updated
+                            </div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 22 August 2023 18:00</div>
+                            <a href="3-III-PRT.html">
+                                
+                                <img style="height: 700px"
+                                src="CharacterPortraits/lizprt3.jpg" alt="">
+                              
+                               
+                               
+                            </a>
+                            <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Liz:Revert</div>
+
+                                </div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 21 August 2023 17:26</div>
+Diary updated
+                            </div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 21 August 2023 17:22</div>
+                            <a href="2-II-PRT.html">
+                                
+                                <img style="height: 700px"
+                                src="CharacterPortraits/Delosa.jpg" alt="">
+                              
+                               
+                               
+                            </a>
+                            <a href="2-II-PRT.html">
+                                
+                                <img style="height: 700px"
+                                src="CharacterPortraits/Tech.jpg" alt="">
+                              
+                               
+                               
+                            </a>
+                            <a href="2-II-PRT.html">
+                                
+                                <img style="height: 700px"
+                                src="CharacterPortraits/minetir.jpg" alt="">
+                              
+                               
+                               
+                            </a>
+                            <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Delosa,Tech,Minetir</div>
+
+                                </div>
+
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 20 August 2023 11:13</div>
+                            <a href="comic-2.html">
+                                
+                                
+                                <img style="height: 1000px"
+                                src="Comics/trf-1e.jpg" alt="">
+                                
+                            </a>
+                            </div>
+                        <div class="box">
+                            <div class="boxname"><i class="fa-solid fa-skull"></i> 19 August 2023 23:30</div>
+Diary updated
+                            </div>
+                            <div style=";" class="box">
+                                <div class="boxname">
+                                    <i class="fa-solid fa-bars-progress"></i> 19 August 2023 12:57
+                                </div>
+                        <div style="font-size: 30px;"> Maid dress Illustration!<i class="fa-solid fa-skull fa-spin-pulse"
+                                style="color: #b80000;"></i>
+                        </div>
+                        <div>The poll will last for 3 days!</div>
+                        <img style="height: 100px;" src="Artwork/Doodles/dd1.jpg" alt="">
+                                <br>
+<button style="padding: 20px; margin: 20px; background-color: black; border: 1px solid black; border-radius: 20px;"><a
+        style=" text-decoration: none; color: white;" href="https://poll-maker.com/poll4906514x8828579b-151">Vote Here!</a></button>
+                                  <br>
+                                  <div style="margin-bottom: 20px;">Personage Choice: Shirang, Antino, Diaz</div>
+    </div>
+                          
+       
+                       
+                             
+                           
+                            
+
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 21 August 2023 00:41</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 19 August 2023 00:39</div>
+                                <a href="2-II-PRT.html">
+                                    
+                                    <img style="height: 700px"
+                                    src="CharacterPortraits/Cleora.jpg" alt="">
+                                  
+                                   
+                                   
+                                </a>
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Cleora:Revert</div>
+
+                                    </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 19 August 2023 00:37</div>
+                                <a href="1-I-PRT.html">
+                                    
+                                    <img style="height: 700px"
+                                    src="CharacterPortraits/pechi3.jpg" alt="">
+                                  
+                                   
+                                   
+                                </a>
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Pechi:Revert</div>
+
+                                    </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 8 August 2023 00:48</div>
+Diary updated
+                                </div>
+                                
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 8 August 2023 00:48</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 13 August 2023 11:58</div>
+                                <a href="14-XIV-PRT.html">
+                                    
+                                    <img style="height: 700px"
+                                    src="CharacterPortraits/BrewPRT.jpg" alt="">
+                                  
+                                   
+                                   
+                                </a>
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Brew:ren</div>
+
+                                    </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 12 August 2023 16:34</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 12 August 2023 15:18</div>
+                                <a href="comic-2.html">
+                                    
+                                    <img style="height: 800px"
+                                    src="Comics/trf-1c.jpg" alt="">
+                                    <img style="height: 800px"
+                                    src="Comics/trf-1d.jpg" alt="">
+                                    
+                                </a>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 12 August 2023 07:11</div>
+                                <img style="height: 400px"
+                                style="height: 400px"
+                                src="CharacterPortraits/lars.jpg" alt="">
+                                </a>
+                                <div>lars :Ren</div>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 11 August 2023 20:24</div>
+                                <a href="comic-2.html">
+                                    
+                                    <img style="height: 1000px"
+                                    src="Comics/trf-1a.jpg" alt="">
+                                    <img style="height: 1000px"
+                                    src="Comics/trf-1b.jpg" alt="">
+                                    
+                                </a>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 11 August 2023 20:20</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 10 August 2023 23:05</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 9 August 2023 21:07</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 9 August 2023 19:31</div>
+                                <a href="comic-5.html">
+                                    
+                                    <img style="height: 750px"
+                                    src="Comics/DOTRintro1.jpg" alt="">
+                                    <img style="height: 750px"
+                                    src="Comics/DOTRintro3.jpg" alt="">
+                                    
+                                </a>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 9 August 2023 18:56</div>
+                                <a href="comic-5.html">
+                                    
+                                    <img style="height: 1070px"
+                                    src="Comics/DOTR-1.jpg" alt="">
+                                    <img style="height: 1070px"
+                                    src="Comics/DOTR-1b.jpg" alt="">
+                                </a>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 8 August 2023 00:48</div>
+Diary updated
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 7 August 2023 19:42</div>
+Diary updated
+                                </div>
+
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 7 August 2023 19:42</div>
+                            <a href="comic-4.html"> <img style="height: 900px;" src="Comics/ProudDadKerr.jpg" alt=""></a>
+
+                                </div>
+
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 7 August 2023 19:42</div>
+                                <a href="80-LXXX-PRT.html">
+                                    
+                                    <img style="height: 500px"
+                                    src="CharacterPortraits/AmonPRT2.jpg" alt="">
+                                </a>
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Amon</div>
+                                </div>
+                            <div class="box">
+                                <div class="boxname"><i class="fa-solid fa-skull"></i> 7 August 2023 14:16</div>
+                            
+                            <a href="BloedrijksMuseum.html">
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">new!! De BloedrijksMuseum is open!!</div>
+                            </a>
+                            <img src="Pixelart/dtnmuseum.png" alt="">
+                                </div>
+                         
+                        
+                                <div style="color: rgb(204, 167, 0); font-size: 20px;">Roepnaam(en): Vincent:Ren, Laguna</div>
+
+                                    </div>
+                          
+
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> 30 July 2023 20:20</div>
+                                  <a href="BunkersDagboek.html"><div>- The bunkers diary is revamped, it will be a place of personal notes and major announcements  </div></a>
+                                  <a href="Personages.html"><div>- The Personage/Characterlist is updated, characters are not removed, their still the same, More about that is in the bunkers diary  </div></a>
+                                        </div>
+
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 25 July 2023 19:17</div>
+                                        
+                                            <a href="Arti0049.html"><img style="height: 700px"
+                                                src="Artwork/Illustrations/Pumpkinflight.jpg" alt=""></a>
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 24 July 2023 19:12 </div>
+                                        
+                                            <a href="81-LXXXI-PRT.html"><img style="height: 600px"
+                                            src="CharacterPortraits/KerrPRT.png" alt=""></a>
+                                         
+                                            <a href="43-XLIII-PRT.html"><img style="height: 700px"
+                                            src="CharacterPortraits/Pechi2.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span>Kerr,<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>81,</div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 21 July 2023 15:33 </div>
+                                        <a href="Personages.html">Sexual/gender orientation flags are added!</a>
+                                        <div class="flag">
+                                            <img src="Flags/demipan.png" alt="">
+                                            <img src="Flags/demisexual.png" alt="">
+                                            <img src="Flags/homosexual.png" alt="">
+                                            <img src="Flags/homoromanticG.png" alt="">
+                                            <img src="Flags/lesbian.png" alt="">
+                                            <img src="Flags/HomoromanticL.png" alt="">
+                                            <img src="Flags/demisexual.png" alt="">
+                                            <br>
+                                            <img src="Flags/Transexual.png" alt="">
+                                            <img src="Flags/Bisexual.png" alt="">
+                                            <img src="Flags/Biromantic.png" alt="">
+                                            <img src="Flags/genderfluid.png" alt="">
+                                            <img src="Flags/agender.png" alt="">
+                                            <img src="Flags/pansexual.png" alt="">
+                                            <img src="Flags/NonBinary.png" alt="">
+                                            <br>
+                                            <img src="Flags/demibisexual.png" alt="">
+                                            <img src="Flags/demihomo.png" alt="">
+                                            <img src="Flags/demilesbian.png" alt="">
+                                            <img src="Flags/Straight.png" alt="">
+                                           
+                                        </div>
+                                         </div>
+            
+            
+            
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 20 July 2023 20:52 </div>
+                                        
+                                            <a href="19-XIX-PRT.html"><img style="height: 520px"
+                                            src="CharacterPortraits/Chini.jpg" alt=""></a>
+                                          
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span>Chini<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span> 19</div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 18 July 2023 15:50 </div>
+                                        
+                                            <a href="34-XXXXIV-PRT.html"><img style="height: 710px"
+                                            src="CharacterPortraits/ville.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span>Ville<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>34</div>
+                                            </div>
+            
+                                        <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> 17 July 2023 23:35 </div>
+                                               
+                                        <a href="Personages.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Characterplacement and information changed</span>
+                                            <div>-francisco & Livee</div>
+                                            </div></a>
+                                            
+                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 17 July 2023 23:33 </div>
+                                        
+                                            <a href="32-XXXII-PRT.html"><img style="height: 710px"
+                                            src="CharacterPortraits/Einx.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Einx<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>32</div>
+                                            </div>
+                                    
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 16 July 2023 19:13 </div>
+                                        
+                                            <a href="64-LXIV-PRT.html"><img style="height: 710px"
+                                            src="CharacterPortraits/Nouri.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Nouri<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>64 </div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 16 July 2023 13:13 </div>
+                                        
+                                            <a href="78-LXXVIII-PRT.html"><img style="height: 710px"
+                                            src="CharacterPortraits/NiveusPRT.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Niveus<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>78 </div>
+                                            </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> 22 July 2023 22:30 </div>
+                                                   
+                                                    <a href="Personages.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Character Placement, personage Book revamped</span>
+                                                        </div></a>
+                                                        
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 14 July 2023 15:51</div>
+                                        
+                                            <a href="Arti0048.html"><img style="height: 560px"
+                                                src="Artwork/Illustrations/Liveehype.jpg" alt=""></a>
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 22 July 2023 22:30 </div>
+                                               
+                                                <a href="Personages.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Characterplacement and information changed</span>
+                                                    <div>-francisco ♾️ Latavan</div>
+                                                    </div></a>
+                                                    
+                                            </div>
+                                    
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 13 July 2023 18:20 </div>
+                                        
+                                            <a href="30-XXX-PRT.html"><img style="height: 810px"
+                                            src="CharacterPortraits/LiveePRT.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">RENEWAL:</span> livee<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>25 </div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 13 July 2023 18:20 </div>
+                                        
+                                            <a href="15-XV-PRT.html"><img style="height: 710px"
+                                            src="CharacterPortraits/latavam.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">RENEWAL:</span> latavan<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>15 </div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 22 July 2023 22:30 </div>
+                                    
+                                               
+                                                <a href="BunkersDagboek.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Bunkers diary is updated</span></div></a>
+                                                    </div>
+                                    
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 12 July 2023 22:00 </div>
+                                        
+                                            <a href="23-XXIII-PRT.html"><img style="height: 510px"
+                                            src="CharacterPortraits/electricusPRT.jpg" alt=""></a>
+                                            <div><span style="color: rgb(228, 0, 0);">RENEWAL:</span> Electricus<br>
+                                            <span style="color: rgb(228, 0, 0);">NUMERAL:</span>23 </div>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 12 July 2023 20:10 </div>
+                                        
+                                            <a href="Arti0047.html"><img style="height: 560px"
+                                                src="Artwork/Illustrations/HiAloisjpg.jpg" alt=""></a>
+                                                </div>
+                                        
+                                   
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 11 July 2023 13:16 </div>
+                                        
+                                            <a href="comic-2.html"><img style="height: 1260px"
+                                                src="Comics/TROCF-10.jpg" alt=""></a>
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 10 July 2023 22:15 </div>
+                                        
+                                            <a href="Comic-1.html"><img style="height: 360px"
+                                                src="GalleryIcons/Tw.jpg" alt=""></a>
+                                                <div><span style="color: rgb(228, 0, 0);"> Comic: TW: Gore and Blood<br></div>
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 10 July 2023 20:10 </div>
+                                        
+                                            <a href="Arti0046.html"><img style="height: 660px"
+                                                src="Artwork/Illustrations/LupinAtBest2.jpg" alt=""></a>
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 9 July 2023 22:45 </div>
+                                        
+                                            <a href="Arti0045.html"><img style="height: 570px"
+                                                src="Artwork/Illustrations/Gezin.jpg" alt=""></a>
+                                                </div>
+                                      
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 8 July 2023 19:00 </div>
+                                        
+                                            <a href="Arti0044.html"><img style="height: 440px"
+                                                src="Artwork/Illustrations/Porselein.jpg" alt=""></a>
+                                                </div>
+                
+                                        <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> 7 July 2023 20:31 </div>
+                                    
+                                            <a href="62-LXII-PRT.html"><img style="height: 510px"
+                                                src="CharacterPortraits/PoreseleinPRT.png" alt=""></a>
+                                                <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Porselein<br>
+                                                    <span style="color: rgb(228, 0, 0);">NUMERAL:</span> 62</div>
+                                            </div>
+            
+                                        <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> 7 July 2023 19:00 </div>
+                                    
+                                        <a href="Arti0043.html"><img style="height: 660px"
+                                            src="Artwork/Illustrations/AntinoRa.jpg" alt=""></a>
+                                            </div>
+            
+                                        <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> 6 July 2023 8:10 </div>
+                                    
+                                        <a href="61-LXI-PRT.html"><img style="height: 510px"
+                                        src="CharacterPortraits/AloisPRT.png" alt=""></a>
+                                        <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Alois<br>
+                                        <span style="color: rgb(228, 0, 0);">NUMERAL:</span> 61</div>
+                                        <a href="Arti0042.html"><img style="height: 410px"
+                                            src="Artwork/Illustrations/AloisSweets.jpg" alt=""></a>
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 5 July 2023 17:50 </div>
+            
+                                        <a href="Arti0041.html"><img style="height: 510px"
+                                            src="Artwork/Illustrations/NewCanvas1.jpg" alt=""></a>
+                                           
+                                                </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 4 June 2023 14:20 </div>
+                                    
+                                               
+                                                <a href="Personages.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Some character numerals are changed</span></div></a>
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 4 July 2023 14:19 </div>
+                                    
+                                                <a href="17-XVII-PRT.html"><img style="height: 710px"
+                                                src="CharacterPortraits/RonnieDonPrt.jpg" alt=""></a>
+                                                <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Don Ronnie<br>
+                                                <span style="color: rgb(228, 0, 0);">NUMERAL:</span> 17</div>
+                                                    </div>
+            
+            
+            
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 3 July 2023 8:10 </div>
+                                    
+                                                <a href="Arti0040.html"><img style="height: 350px"
+                                                src="Artwork/Illustrations/LupinAtBest.jpg" alt=""></a>
+                                              
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 2 June 2023 20:46 </div>
+                                    
+                                               
+                                                <a href="BunkersDagboek.html"><span style="color: rgb(228, 0, 0); font-size: 30px;">Bunkers diary is updated</span></div></a>
+                                                    </div>
+                                      
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 2 July 2023 18:23 </div>
+                                    
+                                                <a href="58-LVIII-PRT.html"><img style="height: 660px"
+                                                src="CharacterPortraits/LupinPRT.png" alt=""></a>
+                                                <div><span style="color: rgb(228, 0, 0);">NAAM:</span> Lupin <br>
+                                                <span style="color: rgb(228, 0, 0);">NUMERAL:</span> 58</div>
+                                                    </div>
+                                     
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> ◈ 28 June 2023 20:11 </div>
+                                    
+                                               <a href="Arti0039.html"> <img style="height: 470px"
+                                                src="Artwork/Illustrations/KlausButcherShop.jpg" alt=""></a>
+                                       
+                                            </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 26 June 2023 00:01 </div>
+                                            <a href="Comic-1.html">
+                                                <div>Click on image</div>
+                                               
+                                                <img style="height: 850px"
+                                                src="Comics/pech-3.jpg" alt=""></a>
+                                                    </div>
+                                       
+                                     
+                                               
+                                     
+                                       
+                                     
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 23 June 2023 20:10 </div>
+                                            <a href="Arti0037.html">
+                                                <img style="height: 590px"
+                                                src="Artwork/Illustrations/2023summer.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 22 June 2023 20:10 </div>
+                                            <a href="Arti0036.html">
+                                                <img style="height: 420px"
+                                                src="Artwork/Illustrations/AxiusAmon_1.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 21 June 2023 20:24 </div>
+                                            <a href="Arti0035.html">
+                                                <img style="height: 570px"
+                                                src="Artwork/Illustrations/Happy400.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 20 June 2023 19:33 </div>
+                                            <a href="Arti0034.html">
+                                                <img style="height: 470px"
+                                                src="Artwork/Illustrations/GumiMeetsRose.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 19 June 2023 12:51 </div>
+                                            <a href="Arti0033.html">
+                                                <img style="height: 500px"
+                                                src="Artwork/Illustrations/bathy.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                   
+                                    
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 17 June 2023 19:16 </div>
+                                            <a href="Arti0030.html">
+                                                <img style="height: 570px"
+                                                src="Artwork/Illustrations/AYEMATEY.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 16 June 2023 19:14 </div>
+                                            <a href="Arti0029.html">
+                                                <img style="height: 450px"
+                                                src="Artwork/Illustrations/CarnivoresDayDream.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                       
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 14 June 2023 20:12 </div>
+                                            <a href="Arti0027.html">
+                                                <img style="height: 500px"
+                                                src="Artwork/Illustrations/Gumicryng.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 13 June 2023 19:27 </div>
+                                            <a href="Arti0026.html">
+                                                <img style="height: 500px"
+                                                src="Artwork/Illustrations/cutiestoner.jpg" alt=""></a>
+                                          
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 13 June 2023 00:59 </div>
+                                            <a href="comic-2.html">
+                                                <img style="height: 700px"
+                                                src="Comics/TROFC-7.png" alt=""></a>
+                                            <a href="comic-2.html">
+                                                <img style="height: 700px"
+                                                src="Comics/TROFC-8.png" alt=""></a>
+            
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 12 June 2023 20:01 </div>
+                                            <a href="Arti0025.html">
+                                                 <img style="height: 500px"
+                                                    src="Artwork/Illustrations/reapersibs.jpg" alt=""></a>
+                                                
+                                                    </div>
+                                       
+                                      
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 11 June 2023 10:02 </div>
+                                            <a href="Comic-1.html">
+                                                 <img style="height: 700px"
+                                                    src="Comics/pech-2.jpg" alt=""></a>
+            
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 9 June 2023 13:02 </div>
+                                            <a href="Arti0024.html">
+                                                 <img style="height: 700px"
+                                                    src="Artwork/Illustrations/lobstermaid.jpg" alt=""></a>
+            
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 8 June 2023 20:08 </div>
+                                            <a href="Arti0023.html">
+                                                 <img style="height: 450px"
+                                                    src="Artwork/Illustrations/pepechi.jpg" alt=""></a>
+            
+                                                    </div>
+                                        
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 6 June 2023 21:03 </div>
+                                            <a href="45-XLV-PRT.html">
+                                                 <img style="height: 500px"
+                                                    src="CharacterPortraits/GumiPRT.png" alt=""></a>
+                                                    <a href="46-XLVI-PRT.htmlF">
+                                                        <img style="height: 500px"
+                                                        src="CharacterPortraits/LancePRT.png" alt=""></a>
+                                                        <div>description:name->Gumi and Lance</div>
+                                                
+            
+                                                    </div>
+                                        
+            
+            
+                                                    </div>
+                                        <div class="box">
+                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 4 June 2023 21:03 </div>
+                                            <div style="color: rgb(238, 197, 12); font-size: 40px;">Happy 300 followers TYSM!!</div>
+                                            <a href="Arti0022.html">
+                                                 <img style="height: 540px"
+                                                    src="Artwork/Illustrations/happy300.jpg" alt=""></a>
+            
+                                                    </div>
+                                        
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i>  2 June 2023 21:07 </div>
+                    
+                                                <a href="Arti0021.html"> <img style="height: 500px"
+                                                        src="Artwork/Illustrations/Pridemonth2023.jpg" alt=""></a>
+                                                        </div>
+                                                        
+                                                        <div class="box">
+                                                            <div class="boxname"><i class="fa-solid fa-skull"></i> 2 June 2023 20:05 </div>
+                                
+                                                            <a href="28-XXVII-PRT.html"> <img style="height: 700px"
+                                                                    src="CharacterPortraits/KLAUSPRT.png" alt=""></a>
+                                                          
+                                                            <div>description:name-> Klaus</div>
+                                                            </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> 2 June 2023 11:35 </div>
+                    
+                                                <a href="comic-2.html"> <img style="height: 800px"
+                                                        src="Comics/TROFC-6.jpg" alt=""></a>
+                                                        </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> 1 June 2023 20:08 </div>
+                    
+                                                <a href="Arti0020.html"> <img style="height: 700px"
+                                                        src="Artwork/Illustrations/TheConspiracyMoment.jpg" alt=""></a>
+                                                        </div>
+                                         
+                    
+                                         
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 28 22 21:46 </div>
+                                                <a href="Arti0019.html">
+                                                     <img style="height: 500px"
+                                                        src="Artwork/Illustrations/ranranran.jpg" alt=""></a>
+                                                        </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 28 2023 21:33 </div>
+                                                <a href="Arti0018.html">
+                                                     <img style="height: 700px"
+                                                        src="Artwork/Illustrations/PechiworldD.jpg" alt=""></a>
+            
+                                                        </div>
+                                          
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 26 2023 23:05 </div>
+                                                <a href="Arti0016.html">
+                                                     <img style="height: 700px"
+                                                        src="Artwork/Illustrations/Coldentrance.jpg" alt=""></a>
+            
+                                                        </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 25 2023 23:10 </div>
+                                                <a href="37-XXXVII-PRT.html">
+                                                     <img style="height: 450px"
+                                                        src="CharacterPortraits/MuusjePRT.png" alt=""></a>
+                                                        </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 25 2023 23:10 </div>
+                                                <div style="color: rgb(238, 197, 12); font-size: 40px;">Happy 200 followers TYSM!!</div>
+                                                <a href="Arti0015.html">
+                                                     <img style="height: 540px"
+                                                        src="Artwork/Illustrations/happy200.jpg" alt=""></a>
+            
+                                                        </div>
+                                          
+                                          
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 25 2023 11:43 </div>
+                    
+                                                <a href="51-LI-PRT.html">
+                                                     <img style="height: 700px"
+                                                        src="CharacterPortraits/RunePRT.png" alt=""></a>
+                                                        <div>description:name-> Rune</div>
+            
+                                                        </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 24 2023 09:25 </div>
+                    
+                                                <a href="Arti0014.html">
+                                                     <img style="height: 370px"
+                                                        src="Artwork/Illustrations/TheSeaCity.jpg" alt=""></a>
+                                              
+                                                </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 22 2023 10:03 </div>
+                    
+                                                <a href="18-XVIII-PRT.html">
+                                                     <img style="height: 700px"
+                                                        src="CharacterPortraits/DiazPRT.jpg" alt=""></a>
+                                                <a href="67-LXVII-PRT.html">
+                                                     <img style="height: 700px"
+                                                        src="CharacterPortraits/Muertoz.jpg" alt=""></a>
+                                                <div>description:name -> Diaz And Muertoz</div>
+                                                
+                                                </div>
+                                            <div class="box">
+                                                <div class="boxname"><i class="fa-solid fa-skull"></i> May 21 2023 17:33</div>
+                    
+                                                <a href="8-VIII-PRT.html"> <img style="height: 700px"
+                                                        src="CharacterPortraits/VincentPRTREN.png" alt=""></a>
+                                                <div>description:name-> Vincent(Renew)</div>
+            
+                                                </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> May 18 2023 11:45 </div>
+                                        <div style="color: darkred; font-size: 40px;">Happy 100 followers TYSM!!</div>
+            
+                                        <a href="Arti0013.html"> <img style="height: 500px"
+                                                src="Artwork/Illustrations/happy100.jpg" alt=""></a>
+            
+                                    </div>
+                                  
+            
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> May 12 2023 16:04 </div>
+            
+                                        <a href="Arti0012.html"> <img style="height: 400px"
+                                                src="Artwork/Illustrations/VekelBunny.jpg" alt=""></a>
+            
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> May 11 2023 16:04 </div>
+            
+                                        <a href="Arti0011.html"> <img style="height: 400px"
+                                                src="Artwork/Illustrations/larsduckie.jpg" alt=""></a>
+            
+                                    </div>
+                                  
+                                  
+                                
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> May 5 2023 07:37 </div>
+            
+                                        <a href="11-XI-PRT.html"> <img style="height: 700px" src="CharacterPortraits/PaulaPRT.png"
+                                                alt=""></a>
+                                        <div>description:name-> Paula</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 30 2023 11:30 </div>
+            
+                                        <a href="27-XXVII-PRT.html"> <img style="height: 700px" src="CharacterPortraits/LeoPRT.png"
+                                                alt=""></a>
+                                        <div>description:name-> Leo cameron</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 30 2023 00:03 </div>
+            
+                                        <a href="58-LVIII-PRT.html"> <img style="height: 700px"
+                                                src="CharacterPortraits/kayariPRT.png" alt=""></a>
+                                        <div>description:name-> kayariPRT/N3</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 29 2023 13:26 </div>
+            
+                                        <a href="57-LVII-PRT.html"> <img style="height: 700px"
+                                                src="CharacterPortraits/haizenPRT.png" alt=""></a>
+                                        <div>description:name-> Haizen/N4</div>
+                                    </div>
+                                   
+                                  
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 28 2023 16:20 </div>
+            
+                                        <a href="65-LXV-PRT.html"> <img style="height: 600px" src="CharacterPortraits/BerPRT.png"
+                                                alt=""></a>
+                                        <div>description:name-> Ber conspi/ Ber conspiracy/ BCP</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 28 2023 15:18 </div>
+            
+                                        <a href="23-XXIII-PRT.html"> <img style="height: 600px"
+                                                src="CharacterPortraits/ShirangPRT.png" alt=""></a>
+                                        <div>description:name-> Shirang</div>
+                                    </div>
+                                  
+                                  
+                                 
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 25 2023 00:10 </div>
+            
+                                        <a href="9-IX-PRT.html"> <img style="height: 700px"
+                                                src="CharacterPortraits/ElizabethhoundPRT.png" alt=""></a>
+                                        <div>description:name-> Elizabeth </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 5 2023 5:32 </div>
+            
+                                        <a href="Arti0006B.html"> <img style="height: 500px" src="Artwork/Illustrations/Amonie.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 24 2023 16:00 </div>
+            
+                                        <a href="36-XXXVI-PRT.html"> <img style="height: 400px"
+                                                src="CharacterPortraits/EendjePRT.png" alt=""></a>
+                                        <div>description:name-> Eend </div>
+                                    </div>
+            
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 16 2023 7:24 </div>
+            
+                                        <video width="520" height="340" controls>
+                                            <source src="Animationandvideo/Short1.mp4" type="video/mp4">
+                                            <source src="movie.ogg" type="video/ogg">
+                                            Monteverdi, He Stole My Fucking Eye
+                                        </video>
+            
+                                    </div>
+            
+                                  
+                                  
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 7 2023 7:10 </div>
+                                        <div style="color: #700000; font-size: 30px;"></div>
+                                        <a href="Arti0007.html"> <img style="height: 450px"
+                                                src="Artwork/Illustrations/ArrogantatBest.png" alt=""></a>
+                                    </div>
+            
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> April 5 2023 10:09 AM</div>
+                                        <div style="color: #700000; font-size: 30px;"></div>
+                                        <a href="Arti0006.html"> <img style="height: 500px"
+                                                src="Artwork/Illustrations/Ranthinking.jpg" alt=""></a>
+                                        <a href="Arti0006.html"> <img style="height: 450px"
+                                                src="Artwork/Illustrations/WonderingRan.jpg" alt=""></a>
+                                    </div>
+                                
+            
+                                  
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i>◈ March 22th 2023 8:28 </div>
+                                        <div style="color: crimson; margin-top: 10px;font-size: 20px;">
+                                        <a href="Arti0004.html"> <img style="height: 700px"
+                                                src="Artwork/Illustrations/VintagemagazineVolume1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> March 21th 2023 2:30 </div>
+            
+                                        <a href="Arti0005.html"> <img style="height: 700px" src="Artwork/Illustrations/PonekoFF.jpg"
+                                                alt=""></a>
+                                        <div>
+                                            <div> Notation:Fanwork Vtuber -> @PonekoVT <i
+                                                    class="fa-brands fa-twitter fa-spin-pulse"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> March 19th 2023 8:43 </div>
+            
+                                        <a href="ArtiFan0004.html"> <img style="height: 350px"
+                                                src="Artwork/Illustrations/SpookyMonthcathedral.jpg" alt=""></a>
+                                        <div> Notation:Fanwork of the series :Spookymonth <br>
+                                            Charachter IP: @SR pelo<i class="fa-brands fa-twitter fa-spin-pulse"></i></div>
+                                    </div>
+            
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i>March 12th 2023 10:08 </div>
+            
+                                        <a href="Artifan0003.html"> <img style="height: 700px"
+                                                src="Artwork/Illustrations/IvlisOkegom.jpg" alt=""></a>
+                                        <div style="padding-bottom: 2px;">Notation: A gift/fanwork for @RoseDarkling <i
+                                                class="fa-brands fa-twitter fa-spin-pulse"></i>
+                                            <br> Charachter Ip: <a style="color: rgb(182, 0, 0);"
+                                                href="http://funamusea.com/">Funamusea.com</a></div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> March 11th 2023 5:45 </div>
+            
+                                        <a href="ArtiFan0002.html"> <img style="height: 700px"
+                                                src="Artwork/Illustrations/AmericandragonJakeLong.jpg" alt=""></a>
+                                        <div style="padding-bottom: 2px;">Notation: Fanwork -> American Dragon</div>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> Datum: March 9 2023 1:34 </div>
+            
+                                        <a href="Arti0003.html"> <img style="height: 700px"
+                                                src="Artwork/Illustrations/Ghostmaid.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> March 4th 2023 11:12 </div>
+            
+                                        <a href="ArtiFan0001.html"> <img style="height: 650px"
+                                                src="Artwork/Illustrations/skidspookymonth.png" alt=""></a>
+                                        <div> Notation:Fanwork of the series :Spookymonth <br>
+                                            Charachter IP: @SR pelo<i class="fa-brands fa-twitter fa-spin-pulse"></i></div>
+                                    </div>
+            
+                                 
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> Febuary 25th 2023 12:26 AM</div>
+                                        <a href="Arti0002.html"> <img style="height: 700px" src="Artwork/Illustrations/Ghostly.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> Febuary 17th 2023 12:26 AM</div>
+                                        <a href="Arti0001.html"> <img style="height: 400px"
+                                                src="Artwork/Illustrations/faustirhype.jpg" alt=""></a>
+                                    </div>
+                                    <div class="box">
+                                        <div class="boxname"><i class="fa-solid fa-skull"></i> Febuary 15th 2023 6:36</div>
+                                        <a href="30-XXX-PRT.html"> <img style="height: 700px" src="CharacterPortraits/FaustPRT.png"
+                                                alt=""></a>
+                                        <br>
+                                    </div>
+                    </th>
+
+                    <th
+                        style=" border-radius: 10px; background: white; height: 100%; width: 150px; vertical-align: top;">
+                        <div style="padding: 10px;">
+                            <div
+                                style="padding-bottom: 20px; font-family: 'Playfair Display SC', serif; font-weight; text-decoration: underline;">
+                                Barsection</div>
+
+                            <div>
+                                <img style="border-radius: 7px; outline: 3px solid black;"
+                                    src="Artwork/Illustrations/fausthype2.png" height="200px;" alt="">
+                                <p>Deathenize -2023 #3</p>
+                            </div>
+
+                            <div>
+                                <img src="Pixelart/Vunnyhopping.gif" alt="">
+
+                                <div style="background: rgb(0, 0, 0); color: white; height: 200px; border-radius: 20px; margin: 10px;">
+                                 
+                                    Laast bewerkt: <br>
+                                    ▼<br>
+                                    2023: <br>
+                                    <img style="height: 30px" src="CharachterIcons/Pechicon.png" alt=""> 22:21 <br>
+                                    <img style="height: 30px" src="CharachterIcons/LizPRT2.jpg" alt=""> 17:22 <br>
+                                    <img style="height: 30px" src="CharachterIcons/Cleocon.png" alt=""> 21:15 <br>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a class="twitter-timeline" data-theme="light" href="https://twitter.com/deathenize" data-tweet-limit="100">Tweets by
+                                    YourUsername</a>
+                                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                            </div>
+
+                            <div class="Socialpop" style="margin-top: px;">
+                                <div style="font-family: cursive;">Instagram</div>
+                                <a href="https://www.instagram.com/deathenize/"><img height="150px"
+                                        src="Extras/instamedia.png" alt=""></a>
+                                <div style="font-family: cursive;">Youtube</div>
+                                <a href="https://www.youtube.com/channel/UCR_x3U321cztbbo45BaaMMw"><img height="150px"
+                                        src="Extras/youtubemedia.png" alt=""></a>
+                                <div style="font-family: cursive;">Twitter</div>
+                                <a href="https://twitter.com/deathenize"><img height="180px"
+                                        src="Extras/twittermedia.png" alt=""></a>
+                                <a href="https://deathenize.tumblr.com/"><img height="180px"
+                                        src="Extras/tumblrmedia.png" alt=""></a>
+                                <div style="font-family: cursive;">Have any questions?</div>
+                                <div>⬇️</div>
+                                <div style="font-family: cursive;">CuriousCat</div>
+                                <a href="https://curiouscat.live/deathenize"><img height="150px"
+                                        src="Extras/media.png" alt=""></a>
+                                     
+
+                            </div>
+
+                        </div>
+                    </th>
+
+            </table>
+           <a style="text-decoration: none;" href="1sttimeline.html"><div style="background: black; width: 150px; height: 20px; color: white;padding: 10px;"> March to July 2023 </div></a> 
+
+            <img height="250px" src="Artwork/Illustrations/pecitrip.png" alt="">
+            <div style=" background: rgb(0, 0, 0); color: white; "> <i class="fa-solid fa-skull"></i>
+                Copyright © 2023 Deathenize. All rights reserved.</div>
+
+        </div>
+    </center>
+    <script>
+          
+      
+        
+       
+        
+       
+          
+    
+        
+        const slides = document.querySelector(".carousel-slides");
+        const slideWidth = slides.children[0].getBoundingClientRect().width;
+        let currentIndex = 0;
+
+        function slideTo(index) {
+            slides.style.transform = `translateX(-${index * slideWidth}px)`;
+            currentIndex = index;
+        }
+
+        function slidePrev() {
+            if (currentIndex > 0) {
+                slideTo(currentIndex - 1);
+            } else {
+                slideTo(slides.children.length - 1);
+            }
+        }
+
+        function slideNext() {
+            if (currentIndex < slides.children.length - 1) {
+                slideTo(currentIndex + 1);
+            } else {
+                slideTo(0);
+            }
+        }
+        const prevButton = document.querySelector(".carousel-button-prev");
+        const nextButton = document.querySelector(".carousel-button-next");
+        prevButton.addEventListener("click", slidePrev);
+        nextButton.addEventListener("click", slideNext);
+        slideTo(0);
+    </script>
+
+</body>
+<!-- font-family: 'Holtwood One SC', serif;
+font-family: 'Nanum Brush Script', cursive;
+font-family: 'Playfair Display SC', serif;-->
+
+</html>

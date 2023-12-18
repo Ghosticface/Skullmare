@@ -175,6 +175,10 @@
   position: relative;
   z-index: 1;
 }
+.superior img  {
+border: 1px solid black;
+height: 100px;
+}
 
 
 

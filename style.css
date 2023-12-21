@@ -1,12 +1,15 @@
 .backgroundHome {
-  background-image: url(Subs/backgound.png);
-  background-size: 300px;
+  background-image: url(Subs/background3.png);
+  background-size: 400px;
   background-attachment: fixed;
 }
 .background {
   background-image: url(Subs/backgound2.png);
   background-size: 300px;
   background-attachment: fixed;
+}
+.background1 {
+ 
 }
 
 .bocket {

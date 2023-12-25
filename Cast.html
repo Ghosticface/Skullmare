@@ -14,12 +14,44 @@
     <title>Skullmare</title>
 
     <style>
-        .Charaicon img {
-            height: 50px;
+          #textbox {
+            font-size: 15px;
+            color: rgb(0, 99, 94);
         }
 
-        .Charaicon img:hover {
-            height: 60px;
+        #Pechi:hover + .hover-text {
+            display: block;
+        }
+
+        .hover-text {
+            top: 20px;
+            left: -23px;
+            font-size: 20px;
+        }
+       
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #d10000;
+            border: black solid;
+            box-shadow: 0 9px #000000;
+            border-radius: 70px;
+            position: relative;
+            left: 50%;
+        }
+
+        .button:hover {
+            background-color: #f50800
+        }
+
+        .button:active {
+            background-color: #d10000;
+            box-shadow: 0 9px #000000;
+            transform: translateY(10px);
         }
 
         .Book {
@@ -36,9 +68,13 @@
             text-decoration: none;
             border-radius: 10px;
             box-shadow: 2px 2px black;
+            position: relative;
+            top: 20px;
+            left: 87px;
 
 
         }
+
         .page1 img:hover {
             height: 32px;
 
@@ -48,7 +84,7 @@
         }
 
         .page1 div {
-            padding-bottom: 19px;
+            padding-bottom: 10px;
 
         }
 
@@ -63,12 +99,15 @@
             text-decoration: none;
             border-radius: 10px;
             box-shadow: 2px 2px black;
-
+            position: relative;
+            top: 20px;
+            left: 59px;
 
         }
-        .page2 img:hover{
+
+        .page2 img:hover {
             height: 32px;
-box-shadow: 1px 1px rgb(255, 0, 0);
+            box-shadow: 1px 1px rgb(255, 0, 0);
 
 
         }
@@ -95,13 +134,61 @@ box-shadow: 1px 1px rgb(255, 0, 0);
             /* Add other styles as needed */
         }
 
+        .Book4 {
+            height: 949px;
+            width: 550px;
+            position: relative;
+            left: 40px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            margin-top: 59px;
+
+        }
+
+        .pages-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .page {
+            width: 470px;
+            height: 649px;
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .icons-container {
+            display: flex;
+        }
+
+        .icons-container a {
+            margin-right: 10px;
+        }
+
+        .slide-button {
+            padding: 10px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .slide-button.prev {
+            left: 90px;
+        }
+
+        .slide-button.next {}
+
         .page1 {
             position: absolute;
-            margin-left: 5.9%;
+            margin-left: 7.5%;
             margin-top: 50px;
             z-index: 1;
             text-decoration: none;
-            /* Add other styles as needed */
         }
     </style>
 </head>
@@ -111,10 +198,11 @@ box-shadow: 1px 1px rgb(255, 0, 0);
         <table style="border-spacing: 20px;">
 
             <tr>
+                
                 <th style="border: black 3px solid; background: white; height: 100%; width: 800px;">
 
                     <table style="border-spacing:20px;">
-                        <img style="height: 175px; outline: black 1px solid;" src="Subs/banner.png" alt="">
+                        <img style="height: 135px; outline: black 1px solid;" src="Subs/banner.png" alt="">
                         <div class="XER"
                             style="display: flex; justify-content: center; justify-content: space-evenly; margin-top: 20px; ">
 
@@ -131,7 +219,8 @@ box-shadow: 1px 1px rgb(255, 0, 0);
 
                             <div> <a href="Blog.html"><img src="pixels/pencilboard.png" alt=""></a>
                                 <br>
-                                <span>Blog</span></div>
+                                <span>Blog</span>
+                            </div>
 
                             <div> <a href="Activties.html"><img src="pixels/activitieboard.png" alt=""></a><br>
                                 Activities</div>
@@ -152,534 +241,339 @@ box-shadow: 1px 1px rgb(255, 0, 0);
 
                                     <div>
                                         <div
-                                            style="border-bottom: 1px solid black; width: 200px; margin: auto; padding-top: 20px;">
-                                            <img src="pixels/donutblue.png" alt=""> Illustrated:0-200 <img
+                                            style="border-bottom: 1px solid black; width: 220px; margin: auto; padding-top: 20px;">
+                                            <img src="pixels/donutblue.png" alt=""> Year 1 total :0-100 <img
                                                 src="pixels/donutblue.png" alt="">
                                         </div>
-                                        <div style="display: flex; justify-content: center;">
-                                            <div style="font-size: 20px;"><img src="pixels/gameboy.png" alt="">Character selected:</div><div id="textbox"> </div>
-
-                                        </div>
+                                  
+                                       <div style="margin-top: 10px;">
+                                        <img src="pixels/smoothieyellow.png" alt="">
+                                        <img src="pixels/smoothieblue.png" alt="">
+                                        <img src="pixels/smoothiegreen.png" alt="">
+                                        <img src="pixels/smoothiebrown.png" alt="">
+                                        <img src="pixels/smoothiepink.png" alt="">
+                                        <img src="pixels/smoothiepurple.png" alt="">
+                                       </div>
+                                        
 
                                     </div>
                                     <div>
-                                        
-                                     </div>
-                                    <div class="Book2" style="display: flex;  ">
-                                        <div class="page1">
-
-                                            <div>
-                                               1-100
-
-
-                                            </div>
-                                           
-                                            <div>
-                                                <a href="1-ch.html"> <img id="Veri" src="icons/veroni.png" alt=""> </a>
-                                                <a href="2-ch.html"> <img id="Hilda" src="icons/Hilda.png" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href="11-ch.html"> <img id="Diph" src="icons/diphonix.png" alt=""> </a>
-                                                <a href="12-ch.html"> <img id="Rav" src="icons/raz.png" alt=""> </a>
-                                                <a href="13-ch.html"> <img id="Elliot" src="icons/elliot.png" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href="21-ch.html"> <img id="Beatrice" src="icons/beatrice.png" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href="41-ch.html"> <img id="Valerian" src="icons/valerian.png" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-
-                                        </div>
-                                        <div class="page2">
-                                            <div>
-                                               101-200
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-
-
-
-                                        </div>
 
                                     </div>
-                                    <!-- book2 -->
-                                    <img src="pixels/donutpink.png" alt=""> 201-400 <img src="pixels/donutpink.png"
-                                        alt=""> </div>
-                                    <div class="Book2" style="display: flex; ">
-
+                                    <div class="hover-text">
+                                        <div>Select Your Player:</div>
+                                        <div id="textbox"></div>
+                                    </div>
+                                                 
+                                    
+                                    <div class="Book4" style="display: flex;  ">
                                         <div class="page1">
 
                                             <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
+
+
                                             </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
+                               <div class="Book4">
+
+                                                <div class="pages-container">
+<!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  † 1-20 † <i class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  Cattagory: Human school girls<i class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="1-ch.html"> <img id="Pechi"
+                                                                    src="icons/veroni.png" alt=""> </a>
+
+                                                            <a href="2-ch.html"> <img id="Hilda"
+                                                                    src="icons/Hilda.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                           
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="6-ch.html"> <img id="May"
+                                                                    src="icons/may.png" alt=""> </a>
+
+                                                            <a href="7-ch.html"> <img id="Bibi"
+                                                                    src="icons/bibi.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                       
+                                                     
+
+
+
+                                                    </div>
+
+<!-- end -->
+<!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  † 21-40 † <i class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  Cattagory: Human school boys <i class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="21-ch.html"> <img id="Diph"
+                                                                    src="icons/diphonix.png" alt=""> </a>
+
+                                                            <a href="22-ch.html"> <img id="Elliot"
+                                                                    src="icons/elliot.png" alt=""> </a>
+                                                            <a href="23-ch.html"> <img id="Rav"
+                                                                    src="icons/raz.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                           
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="May"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                       
+                                                       
+
+
+
+                                                    </div>
+
+<!-- end -->
+<!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  † 41-60 † <i class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  Cattagory: Elderitch <i class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="41-ch.html"> <img id="Valerian"
+                                                                    src="icons/valerian.png" alt=""> </a>
+
+                                                            <a href="42-ch.html"> <img id="Mara"
+                                                                    src="icons/mara.png" alt=""> </a>
+                                                            <a href="23-ch.html"> <img id="Nochar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                           
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="May"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                       
+                                                       
+
+
+
+                                                    </div>
+
+<!-- end -->
+
+
+
+                                                </div>
                                             </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
+
+
+
 
                                         </div>
-                                        <div class="page2">
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
-                                            <div>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                                <a href=""> <img id="NoChar" src="icons/xxx.jpeg" alt=""> </a>
-                                            </div>
+                                        <div
+                                            style=" height: 100px; width: 300px; display: flex; justify-content: space-evenly;padding-bottom: 50px;">
+                                            <button class="button" onclick="nextSlide()">
+                                                <img src="pixels/pointerright.png" alt="">
 
+                                            </button>
+                                            <button class="button" onclick="prevSlide()">
+                                                <img src="pixels/pointerleft.png" alt="">
 
-
+                                            </button>
                                         </div>
+
+
 
                                     </div>
                                 </th>
@@ -687,7 +581,8 @@ box-shadow: 1px 1px rgb(255, 0, 0);
                         </table>
                         <img src="pixels/date.png" alt="">
 
-                        <div style=" background: rgb(255, 255, 255); color: rgb(168, 168, 168);"> <img src="pixels/plant.png" alt="">
+                        <div style=" background: rgb(255, 255, 255); color: rgb(168, 168, 168);"> <img
+                                src="pixels/plant.png" alt="">
                             Copyright © 2024 Skullmare All rights reserved. <img src="pixels/plant.png" alt=""></div>
                         </div>
                 </th>
@@ -695,9 +590,32 @@ box-shadow: 1px 1px rgb(255, 0, 0);
         </table>
     </center>
     <script src="character.js"></script>
-    
-    
-    
+    <script>
+        let currentPage = 0;
+        const slideDistance = 470; // Adjust this value to control the slide distance
+
+        function nextSlide() {
+            currentPage++;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentPage--;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            const slideWidth = document.querySelector('.Book4').offsetWidth;
+            const transformValue = -currentPage * slideDistance + 'px';
+            document.querySelector('.pages-container').style.transform = 'translateX(' + transformValue + ')';
+        }
+
+        // Adding click event listeners to the Book4 div
+        document.querySelector('.Book4 .next').addEventListener('click', nextSlide);
+        document.querySelector('.Book4 .prev').addEventListener('click', prevSlide);
+    </script>
+
+
 </body>
 
 </html>

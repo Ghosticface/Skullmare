@@ -8,6 +8,11 @@
   background-size: 300px;
   background-attachment: fixed;
 }
+.background5 {
+  background-image: url(Subs/background4.png);
+  background-size: 300px;
+  background-attachment: fixed;
+}
 .background1 {
  
 }
@@ -170,6 +175,8 @@
   position:relative;
   z-index: 1;
 }
+
+
 .Book3 {
   height: 672px;
   width: 1202px;

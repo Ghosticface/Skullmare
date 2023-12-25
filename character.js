@@ -1,9 +1,9 @@
+// Thanks barrel for helping with the syntax that is JS
 document.addEventListener("DOMContentLoaded", function () {
     let textbox = document.getElementById("textbox");
 
-    // Define texts for different elements
     const texts = {
-        Veri: "Veroni",
+        Pechi: "Pechi",
         Hilda: "Hilda",
         Valerian: "Valerian",
         Huhner: "HUH?",
@@ -11,12 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
         Rav: "Rav",
         Elliot: "Elliot",
         Veri: "Veroni",
-        Veri: "Veroni",
-        Diph: "Dip",
+        Diph: "Dip",    
+        May: "May",    
+        Bibi: "Bibi",    
+        Mara: "Mara",    
         NoChar: "???",
     };
 
-    // Add event listeners for all elements
     document.querySelectorAll('[id]').forEach((element) => {
         element.addEventListener("mouseenter", (event) => {
             const id = element.id;

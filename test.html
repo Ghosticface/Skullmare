@@ -1,37 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="skullicon.png">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+
+    <title>Skullmare</title>
+
+    <style>
+        .textbox{
+            position: relative;
+            top: -20px
+        }
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: #d10000;
+            border: black solid;
+            box-shadow: 0 9px #000000;
+            border-radius: 70px;
+            position: relative;
+            left: 50%;
+        }
+
+        .button:hover {
+            background-color: #f50800
+        }
+
+        .button:active {
+            background-color: #d10000;
+            box-shadow: 0 9px #000000;
+            transform: translateY(10px);
+        }
+
+        .Book {
+            height: 610px;
+            width: 812px;
+            background: url(pixels/bigbook.png);
+            position: relative;
+            z-index: 0;
+        }
+
+        .page1 img {
+            border: 1px black solid;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px black;
+            position: relative;
+            top: 20px;
+            left: 87px;
+
+
+        }
+
+        .page1 img:hover {
+            height: 32px;
+
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+        .page1 div {
+            padding-bottom: 10px;
+
+        }
+
+        .page2 div {
+            padding-bottom: 19px;
+
+        }
+
+        .page2 img {
+            border: 1px black solid;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px black;
+            position: relative;
+            top: 20px;
+            left: 59px;
+
+        }
+
+        .page2 img:hover {
+            height: 32px;
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+        .page1 a {
+            text-decoration: none;
+
+
+
+        }
+
+        .page2 a {
+            text-decoration: none;
+
+
+
+        }
+
+        .page2 {
+            position: absolute;
+            margin-left: 52.7%;
+            margin-top: 50px;
+            z-index: 1;
+            /* Add other styles as needed */
+        }
+
+        .Book4 {
+            height: 949px;
+            width: 550px;
+            position: relative;
+            left: 40px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            margin-top: 59px;
+
+        }
+
+        .pages-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .page {
+            width: 470px;
+            height: 649px;
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            /* Adjust padding as needed */
+        }
+
+        .icons-container {
+            display: flex;
+        }
+
+        .icons-container a {
+            margin-right: 10px;
+            /* Adjust the margin as needed */
+        }
+
+        .slide-button {
+            padding: 10px;
+            background-color: #ddd;
+            /* Button background color */
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .slide-button.prev {
+            left: 90px;
+        }
+
+        .slide-button.next {}
+
+        .page1 {
+            position: absolute;
+            margin-left: 7.5%;
+            margin-top: 50px;
+            z-index: 1;
+            text-decoration: none;
+            /* Add other styles as needed */
+        }
+    </style>
 </head>
-<body>
 
-<!-- Your HTML elements -->
-<div id="Pechi">Hover over me (Pechi)</div>
-<div id="NoChar">Hover over me (NoChar)</div>
-<div id="textbox">This is the default text</div>
+<body class="backgroundHome">
+    <center>
+        <table style="border-spacing: 20px;">
 
-<!-- Your JavaScript code -->
-<script>
-    let textbox = document.getElementById("textbox");
+            <tr>
+                <th style="border: black 3px solid; background: white; height: 100%; width: 800px;">
 
-    const texts = {
-        Pechi : "This is pechi crazy right?",
-        NoChar : "This is NO ONE, fun fact, FUCK YOU.",
-    };
+                    <table style="border-spacing:20px;">
+                        <img style="height: 135px; outline: black 1px solid;" src="Subs/banner.png" alt="">
+                        <div class="XER"
+                            style="display: flex; justify-content: center; justify-content: space-evenly; margin-top: 20px; ">
 
-    for (const id in texts){
-        const element = document.getElementById(id);
-        console.log(element);
-        element.addEventListener("pointerenter" , async (event) => {
-            document.getElementById("textbox").innerHTML = texts[id];
-        });
-        element.addEventListener("pointerleave" , async (event) =>{
-            document.getElementById("textbox").innerHTML = `this is a default text, change it later `;
-        });
-    };
-</script>
+                            <div style=""> <a href="about.html"><img src="pixels/questionboard.png" alt=""></a> <br>
+                                About </div>
+
+                            <div style=""> <a href="Homefeed.html"><img src="pixels/houseboard.png" alt=""></a> <br>
+                                News Feed</div>
+
+                            <div> <a href="Cast.html"><img src="pixels/boardperson.png" alt=""></a>
+                                <br>
+                                Cast
+                            </div>
+
+                            <div> <a href="Blog.html"><img src="pixels/pencilboard.png" alt=""></a>
+                                <br>
+                                <span>Blog</span>
+                            </div>
+
+                            <div> <a href="Activties.html"><img src="pixels/activitieboard.png" alt=""></a><br>
+                                Activities</div>
+
+
+
+                            <tr>
+                                <th
+                                    style="border:  background: rgb(255, 255, 255); height: 100%; width: 800px; padding: 10px">
+
+
+
+                        </div>
+                        <table style="border-spacing: 20px;">
+                            <tr>
+                                <th
+                                    style="border: 3px solid black; background: rgb(255, 255, 255); height: 100%; width: 800px; padding: 10px">
+
+                                    <div>
+                                        <div
+                                            style="border-bottom: 1px solid black; width: 220px; margin: auto; padding-top: 20px;">
+                                            <img src="pixels/donutblue.png" alt=""> Year 1 total :0-100 <img
+                                                src="pixels/donutblue.png" alt="">
+                                        </div>
+                                  
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div class="Book4" style="display: flex;  ">
+                                        <div class="page1">
+
+                                            <div>
+
+
+                                            </div>
+
+                                            <div class="Book4">
+
+                                                <div class="pages-container">
+<!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  † 1-20 † <i class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="1-ch.html"> <img id="Pechi"
+                                                                    src="icons/veroni.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Hilda"
+                                                                    src="icons/Hilda.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                           
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="May"
+                                                                    src="icons/may.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                       
+                                                        <div style=" position: relative; top: 20px; left: -23px;">
+                                                            <div style="font-size: 15px; ">
+                                                                 selected Player:</div>
+                                                            <div style="color: rgb(0, 99, 94);" id="textbox"> </div> 
+                
+                                                        </div>
+
+
+
+                                                    </div>
+
+<!-- end -->
+<!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i>  † 1-20 † <i class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="1-ch.html"> <img id="Pechi"
+                                                                    src="icons/veroni.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Hilda"
+                                                                    src="icons/Hilda.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                           
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="May"
+                                                                    src="icons/may.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+                                                           
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                       
+                                                        <div style=" position: relative; top: 20px; left: -23px;">
+                                                            <div style="font-size: 15px; ">
+                                                                 selected Player:</div>
+                                                            <div style="color: rgb(0, 99, 94);" id="textbox"> </div> 
+                
+                                                        </div>
+
+
+
+                                                    </div>
+
+<!-- end -->
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <div
+                                            style=" height: 100px; width: 300px; display: flex; justify-content: space-evenly;padding-bottom: 50px;">
+                                            <button class="button" onclick="nextSlide()">
+                                                <img src="pixels/pointerright.png" alt="">
+
+                                            </button>
+                                            <button class="button" onclick="prevSlide()">
+                                                <img src="pixels/pointerleft.png" alt="">
+
+                                            </button>
+                                        </div>
+
+
+
+                                    </div>
+                                </th>
+                            </tr>
+                        </table>
+                        <img src="pixels/date.png" alt="">
+
+                        <div style=" background: rgb(255, 255, 255); color: rgb(168, 168, 168);"> <img
+                                src="pixels/plant.png" alt="">
+                            Copyright © 2024 Skullmare All rights reserved. <img src="pixels/plant.png" alt=""></div>
+                        </div>
+                </th>
+            </tr>
+        </table>
+    </center>
+    <script src="character.js"></script>
+    <script>
+        let currentPage = 0;
+        const slideDistance = 470; // Adjust this value to control the slide distance
+
+        function nextSlide() {
+            currentPage++;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentPage--;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            const slideWidth = document.querySelector('.Book4').offsetWidth;
+            const transformValue = -currentPage * slideDistance + 'px';
+            document.querySelector('.pages-container').style.transform = 'translateX(' + transformValue + ')';
+        }
+
+        // Adding click event listeners to the Book4 div
+        document.querySelector('.Book4 .next').addEventListener('click', nextSlide);
+        document.querySelector('.Book4 .prev').addEventListener('click', prevSlide);
+    </script>
+
 
 </body>
+
 </html>

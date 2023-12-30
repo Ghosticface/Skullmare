@@ -177,6 +177,27 @@
 }
 
 
+
+.infotable th, td  {
+padding: 10px;
+border-radius: 10px;
+background: white;
+color: rgb(0, 0, 0);
+}
+
+.infotables{
+
+}
+.Book5 {
+  height:912px;
+  width:1090px;
+  background: url(pixels/bigbiggerbook.png);
+  background-size: 1100px;
+  position:relative;
+  z-index: 1;
+}
+
+
 .Book3 {
   height: 672px;
   width: 1202px;

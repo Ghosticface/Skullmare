@@ -92,7 +92,7 @@
             text-align: center;
         }
 
-        .cclosebuttonandshit {
+        .closebuttonandshit {
             top: 10px;
             cursor: pointer;
             right: 10px;
@@ -326,6 +326,26 @@
 
                                                 <div style="border: 1px solid black; margin-bottom: 20px;">
                                                     <div style="border-bottom: 1px black solid ;font-size: 20px;"><img
+                                                            src="pixels/star.png" alt=""> Note 10# : Characters</div>
+                                                    <img style="height: 800px; padding: 20px;"
+                                                        src="ports/Muertoz.png" alt="">
+                                                    <img style="height: 800px; padding: 20px;"
+                                                        src="ports/Diaz.png" alt="">
+                                                    <img style="height: 800px; padding: 20px;"
+                                                        src="ports/valerian.png" alt="">
+                                                    <img style="height: 800px; padding: 20px;"
+                                                        src="ports/mara.png" alt="">
+                                                </div>
+                                                <div style="border: 1px solid black; margin-bottom: 20px;">
+                                                    <div style="border-bottom: 1px black solid ;font-size: 20px;"><img
+                                                            src="pixels/star.png" alt=""> Note 9#</div>
+                                                    <img style="height: 2000px; padding: 20px;"
+                                                        src="stories/drinking.png" alt="">
+                                                </div>
+                                                <!-- sep -->
+
+                                                <div style="border: 1px solid black; margin-bottom: 20px;">
+                                                    <div style="border-bottom: 1px black solid ;font-size: 20px;"><img
                                                             src="pixels/star.png" alt=""> Note 8#: HAPPY CHRISTMAS</div>
                                                     <img style="height: 800px; padding: 20px;"
                                                         src="plaatjes/christmas2023.png" alt="">
@@ -392,7 +412,7 @@
 
                                                 <div style="border: 1px solid black; margin-bottom: 20px;">
                                                     <div style="border-bottom: 1px black solid ;font-size: 20px; "><img
-                                                            src="pixels/star.png" alt=""> Note 0#</div>
+                                                            src="pixels/star.png" alt=""> Note 0#: Characters</div>
                                                     <a href="Cast.html">
                                                         <img style="height: 700px;padding: 10px;"
                                                             src="ports/bibi.png" alt="">
@@ -495,35 +515,11 @@
     </center>
 
     <script>
-        const slides = document.querySelector(".carousel-slides");
-        const slideWidth = slides.children[0].getBoundingClientRect().width;
-        let currentIndex = 0;
+        function close() {
+    var modal = document.getElementById('Modalius');
+    modal.style.display = 'none';
+}
 
-        function slideTo(index) {
-            slides.style.transform = `translateX(-${index * slideWidth}px)`;
-            currentIndex = index;
-        }
-
-        function slidePrev() {
-            if (currentIndex > 0) {
-                slideTo(currentIndex - 1);
-            } else {
-                slideTo(slides.children.length - 1);
-            }
-        }
-
-        function slideNext() {
-            if (currentIndex < slides.children.length - 1) {
-                slideTo(currentIndex + 1);
-            } else {
-                slideTo(0);
-            }
-        }
-        const prevButton = document.querySelector(".carousel-button-prev");
-        const nextButton = document.querySelector(".carousel-button-next");
-        prevButton.addEventListener("click", slidePrev);
-        nextButton.addEventListener("click", slideNext);
-        slideTo(0);
         var modal = document.getElementById('Modalius');
 
         function TOS() {

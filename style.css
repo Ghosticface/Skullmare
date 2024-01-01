@@ -1,7 +1,5 @@
 .backgroundHome {
-  background-image: url(Subs/background3.png);
-  background-size: 400px;
-  background-attachment: fixed;
+ background-color: #000000;
 }
 .background {
   background-image: url(Subs/backgound2.png);
@@ -16,7 +14,10 @@
 .background1 {
  
 }
-
+.notes{
+  border-bottom: 1px black dashed ;
+  border-left: 4px black solid;
+}
 .bocket {
   align-items: center;
   display: flex;
@@ -188,6 +189,7 @@ color: rgb(0, 0, 0);
 .infotables{
 
 }
+
 .Book5 {
   height:912px;
   width:1090px;

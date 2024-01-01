@@ -40,13 +40,28 @@ function checkPassword() {
 
     switch (codeNumber) {
         case 0001:
-            window.location.href = "1-ch.html";
+            window.location.href = "https://ghosticface.github.io/Skullmare/1-ch.html";
             break;
-        case 2:
-            window.location.href = "page2.html";
+        case 0002:
+            window.location.href = "https://ghosticface.github.io/Skullmare/2-ch.html";
             break;
-        case 3:
-            window.location.href = "page3.html";
+        case 0006:
+            window.location.href = "https://ghosticface.github.io/Skullmare/6-ch.html";
+            break;
+        case 0021:
+            window.location.href = "https://ghosticface.github.io/Skullmare/21-ch.html";
+            break;
+        case 0041:
+            window.location.href = "https://ghosticface.github.io/Skullmare/41-ch.html";
+            break;
+        case 0042:
+            window.location.href = "https://ghosticface.github.io/Skullmare/42-ch.html";
+            break;
+        case 0043:
+            window.location.href = "https://ghosticface.github.io/Skullmare/43-ch.html";
+            break;
+        case 0044:
+            window.location.href = "https://ghosticface.github.io/Skullmare/44-ch.html";
             break;
 
         default:

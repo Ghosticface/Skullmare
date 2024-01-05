@@ -1,6 +1,17 @@
 .backgroundHome {
- background-color: #000000;
+  background-image: url(Subs/backgound.png);
+  background-size: 300px;
+  background-attachment: fixed;
+  
 }
+body {
+  overflow-x: hidden; /* This hides the vertical overflow */
+  
+}
+body {
+  
+}
+
 .background {
   background-image: url(Subs/backgound2.png);
   background-size: 300px;
@@ -190,11 +201,10 @@ color: rgb(0, 0, 0);
 
 }
 
-.Book5 {
-  height:912px;
-  width:1090px;
+.Novellisting {
+  height:812px;
+  width:912px;
   background: url(pixels/bigbiggerbook.png);
-  background-size: 1100px;
   position:relative;
   z-index: 1;
 }

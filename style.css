@@ -2,16 +2,7 @@
   background-image: url(Subs/backgound.png);
   background-size: 300px;
   background-attachment: fixed;
-  
 }
-body {
-  overflow-x: hidden; /* This hides the vertical overflow */
-  
-}
-body {
-  
-}
-
 .background {
   background-image: url(Subs/backgound2.png);
   background-size: 300px;
@@ -172,21 +163,6 @@ body {
 .infotable td th {
   border: 1px black solid;
 }
-.Book {
-  height: 812px;
-  width: 912px;
-  background: url(pixels/bigbiggerbook.png);
-  position:relative;
-  z-index: 1;
-}
-
-.Book2 {
-  height:812px;
-  width:912px;
-  background: url(pixels/bigbiggerbook.png);
-  position:relative;
-  z-index: 1;
-}
 
 
 
@@ -201,23 +177,11 @@ color: rgb(0, 0, 0);
 
 }
 
-.Novellisting {
-  height:812px;
-  width:912px;
-  background: url(pixels/bigbiggerbook.png);
-  position:relative;
-  z-index: 1;
-}
 
 
-.Book3 {
-  height: 672px;
-  width: 1202px;
-  background: url(pixels/characterbook2.png);
-  background-size: 1200px;
-  position: relative;
-  z-index: 1;
-}
+
+
+
 .superior img  {
 border: 1px solid black;
 height: 100px;

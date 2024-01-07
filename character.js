@@ -17,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
         Mara: "Mara",    
         Diaz: "Diaz",    
         Muertoz: "Muertoz",    
+        Sume: "Sume",    
+        Cleora: "Cleora",    
+        Ori: "Ori",    
+        Caramelo: "Caramelo",    
         NoChar: "???",
     };
 

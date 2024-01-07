@@ -2,433 +2,873 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="skullicon.png">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="skullicon.png">
+    <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <script src="https://kit.fontawesome.com/ea7035071a.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skullmare</title>
 
-        <title>Skullmare</title>
-
-        <style>
-                
-
-       
-      
-        .secdiv a {
-            color: black
+    <style>
+        #textbox {
+            font-size: 15px;
+            color: rgb(0, 99, 94);
         }
 
-        .book {
-            display: inline-block;
-            background-image: url(pixels/bigbiggerbook.png);
-            background-size: cover;
-            width: 912px;
-            height: 812px;
-            padding: 20px;
-            box-sizing: border-box;
+        #Pechi:hover+.hover-text {
+            display: block;
         }
 
-        .table-box img {
-            height: 45px;
-            border: 2px solid black;
-            box-shadow: grey 2px 2px;
-            margin-left: 20px;
-
-
+        .hover-text {
+            top: 20px;
+            left: -23px;
+            font-size: 20px;
         }
 
-       
-
-        .table-box img:hover {
-            filter: sepia();
-
-
-        }
-
-        .table-box {
-            margin-left:12px;
-            margin-top: 20px;
-            width: 100%;
-            height: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        th[title] {
-            position: relative;
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
             cursor: pointer;
-        }
-
-        th[title]:hover::after {
-            content: attr(title);
-            position: absolute;
-            top: -70%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 5px;
-            z-index: 1;
-            background-color: #000;
+            outline: none;
             color: #fff;
-            font-size: 12px;
-            white-space: nowrap;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        .turn {
-            color: white;
-        }
-
-        .turn:hover {
-            color: purple;
+            background-color: #d10000;
+            border: black solid;
+            box-shadow: 0 9px #000000;
+            border-radius: 70px;
+            position: relative;
+            left: 50%;
         }
 
-              
-             
-        </style>
+        .button:hover {
+            background-color: #f50800
+        }
+
+        .button:active {
+            background-color: #d10000;
+            box-shadow: 0 9px #000000;
+            transform: translateY(10px);
+        }
+
+        .Book {
+            height: 610px;
+            width: 812px;
+            background: url(pixels/bigbook.png);
+            position: relative;
+            z-index: 0;
+        }
+
+        .page1 img {
+            border: 1px black solid;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px black;
+            position: relative;
+            top: 20px;
+            left: 87px;
+
+
+        }
+
+        .page1 img:hover {
+            height: 32px;
+
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+        .page1 div {
+            padding-bottom: 10px;
+
+        }
+
+        .page2 div {
+            padding-bottom: 19px;
+
+        }
+
+        .page2 img {
+            border: 1px black solid;
+            height: 30px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 2px 2px black;
+            position: relative;
+            top: 20px;
+            left: 59px;
+
+        }
+
+        .page2 img:hover {
+            height: 32px;
+            box-shadow: 1px 1px rgb(255, 0, 0);
+
+
+        }
+
+        .page1 a {
+            text-decoration: none;
+
+
+
+        }
+
+        .page2 a {
+            text-decoration: none;
+
+
+
+        }
+
+        .page2 {
+            position: absolute;
+            margin-left: 52.7%;
+            margin-top: 50px;
+            z-index: 1;
+            /* Add other styles as needed */
+        }
+
+        .Book4 {
+            height: 949px;
+            width: 550px;
+            position: relative;
+            left: 40px;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            margin-top: 59px;
+
+        }
+
+        .pages-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .page {
+            width: 470px;
+            height: 649px;
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        .page {
+            width: 470px;
+            height: 649px;
+            box-sizing: border-box;
+            background: url(pixels/fameboy.png);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .icons-container {
+            display: flex;
+        }
+
+        .icons-container a {
+            margin-right: 10px;
+        }
+
+        .slide-button {
+            padding: 10px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        .slide-button.prev {
+            left: 90px;
+        }
+
+        .slide-button.next {}
+
+        .page1 {
+            position: absolute;
+            margin-left: 7.5%;
+            margin-top: 50px;
+            z-index: 1;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body class="backgroundHome">
+    <center>
+        <table style="border-spacing: 20px;">
+
+            <tr>
+
+                <th style="border: black 3px solid; background: white; height: 100%; width: 800px;">
+
+                    <table style="border-spacing:20px;">
+                        <img style="height: 135px; outline: black 1px solid;" src="Subs/banner.png" alt="">
+                        <div class="XER"
+                            style="display: flex; justify-content: center; justify-content: space-evenly; margin-top: 20px; ">
+
+                            <div style=""> <a href="about.html"><img src="pixels/questionboard.png" alt=""></a> <br>
+                                About </div>
+
+                            <div style=""> <a href="Homefeed.html"><img src="pixels/houseboard.png" alt=""></a> <br>
+                                News Feed</div>
+
+                            <div> <a href="Cast.html"><img src="pixels/boardperson.png" alt=""></a>
+                                <br>
+                                Cast
+                            </div>
+
+                            <div> <a href="Blog.html"><img src="pixels/pencilboard.png" alt=""></a>
+                                <br>
+                                <span>Blog</span>
+                            </div>
+
+                            <div> <a href="Activties.html"><img src="pixels/activitieboard.png" alt=""></a><br>
+                                Activities</div>
+
+
+
+                            <tr>
+                                <th
+                                    style="border:  background: rgb(255, 255, 255); height: 100%; width: 800px; padding: 10px">
+
+
+
+                        </div>
+                        <table style="border-spacing: 20px;">
+                            <tr>
+                                <th
+                                    style="border: 3px solid black; background: rgb(255, 255, 255); height: 100%; width: 800px; padding: 10px">
+
+                                    <div>
+                                        <div
+                                            style="border-bottom: 1px solid black; width: 220px; margin: auto; padding-top: 20px;">
+                                            <img src="pixels/donutblue.png" alt=""> Year 1 total :0-100 <img
+                                                src="pixels/donutblue.png" alt="">
+                                        </div>
+
+                                        <h4>Want to go to a characters page directly?</h4>
+                                        <p><img src="pixels/star.png" alt=""> Enter their numeral code ( <span
+                                                style="color: green;">Ex: 0001 <img src="pixels/pointerright.png"
+                                                    alt=""> Pechi</span> )</p>
+
+                                        <form id="passwordForm" onsubmit="checkPassword(); return false;">
+                                            <input type="text" id="codeInput" placeholder="Enter Character Numeral" />
+                                            <button type="submit">Submit</button>
+                                        </form>
+
+                                        <div style="margin-top: 10px;">
+                                            <img src="pixels/smoothieyellow.png" alt="">
+                                            <img src="pixels/smoothieblue.png" alt="">
+                                            <img src="pixels/smoothiegreen.png" alt="">
+                                            <img src="pixels/smoothiebrown.png" alt="">
+                                            <img src="pixels/smoothiepink.png" alt="">
+                                            <img src="pixels/smoothiepurple.png" alt="">
+                                        </div>
+
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                    <div class="hover-text">
+                                        <div>Select Your Player:</div>
+                                        <div id="textbox"></div>
+                                    </div>
+
+
+                                    <div class="Book4" style="display: flex;  ">
+                                        <div class="page1">
+
+                                            <div>
+
+
+                                            </div>
+                                            <div class="Book4">
+
+                                                <div class="pages-container">
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                      
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> Cattagory: Humans <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                             School girls
+                                                                </span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Cleora"
+                                                                    src="icons/cleora.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="Sume"
+                                                                    src="icons/sume.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Bibi"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span
+                                                        style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                         Parents
+                                                            </span>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
 
 
 
 
-        <center>
+
+                                                    </div>
+
+                                                    <!-- end -->
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                      
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> Cattagory: Mythicals <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                            Animals
+                                                                </span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Ori"
+                                                                    src="icons/ori.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="Caramelo"
+                                                                    src="icons/caramelo.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Bibi"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span
+                                                        style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                         ?
+                                                            </span>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
 
 
 
 
-                <table style="border-spacing:20px;">
 
-                        <tr>
-                                <th class=""
-                                        style="border: black 3px solid; background: white; height: 100%; width: 800px; ">
+                                                    </div>
+
+
+                                                    <!-- end -->
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                      
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> Cattagory: Elderitch <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                                <span
+                                                                style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                                ▲ ▲ ▲
+                                                                    </span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="Heizenga"
+                                                                    src="icons/heizenga.png" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="Bermuda"
+                                                                    src="icons/bermuda.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="Valerian"
+                                                                    src="icons/valerian.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="Boroque"
+                                                                    src="icons/boroque.png" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <span
+                                                        style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px; font-size: 10px;">
+                                                        Civilians                                                   
+                                                     </span>                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="Zal"
+                                                                    src="icons/zal.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="Jack"
+                                                                    src="icons/jacko.png" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+
+                                                    <!-- end -->
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> † 61-80 † <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> Cattagory: Cryptids <i
+                                                                class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="Valerian"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="Mara"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="" src="icons/xxx.jpeg"
+                                                                    alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+
+                                                    <!-- end -->
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> † 81-100 † <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> Cattagory: Ethereals <i
+                                                                class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt=""> </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="icons-container">
+
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+                                                            <a href="Filenotfound.html"> <img id="NoChar"
+                                                                    src="icons/xxx.jpeg" alt="">
+                                                            </a>
+
+                                                        </div>
+
+
+
+
+
+                                                    </div>
+
+                                                    <!-- end -->
+                                                    <!-- page con start -->
+                                                    <div class="page">
+                                                        <span
+                                                            style=" position: relative; top: 30px; left: -25px; margin-bottom: 10px;">
+                                                            <i class="fa-solid fa-star"></i> † 81-100 † <i
+                                                                class="fa-solid fa-star"></i></span>
+                                                        <span
+                                                            style=" position: relative; top: 120px; left: -25px; margin-bottom: 10px; font-size: 15Opx;">
+                                                            <i class="fa-solid fa-star"></i> Game over! See you Next year <i
+                                                                class="fa-solid fa-star"></i></span>
+
+                                                        <div>
+
+                                                        </div>
+
+                                                     
+                                                      
+                                                      
+
+
+
+
+
+                                                    </div>
+
+                                                    <!-- end -->
+
+
+
+                                                </div>
+                                            </div>
+
 
 
 
                                         </div>
+                                        <div
+                                            style=" height: 100px; width: 300px; display: flex; justify-content: space-evenly;padding-bottom: 50px;">
+                                            <button class="button" onclick="nextSlide()">
+                                                <img src="pixels/pointerright.png" alt="">
+
+                                            </button>
+                                            <button class="button" onclick="prevSlide()">
+                                                <img src="pixels/pointerleft.png" alt="">
+
+                                            </button>
+                                        </div>
 
 
 
-                                        <table style="border-spacing:20px;">
-
-                                                <tr>
-                                                        <th
-                                                                style="border: 3px solid black; background: rgb(255, 255, 255); height: 100%; width: 800px; padding: 10px">
-
-
-
-                                                                </div>
-
-                                                                <div class="box">
-
-                                                                        <br>
-                                                                        <h1 style="">
-                                                                                <img src="pixels/book.png" alt="">
-                                                                                Stories and Content
-                                                                        </h1>
-                                                                        <h4>Stories/Comics, DDTS, and novels</h4>
-                                                                        <a href="Activties.html"> <img
-                                                                                        src="pixels/activitieboard.png"
-                                                                                        alt=""> <br> Go back to
-                                                                                activities</a>
-                                                                        <br>
-
-                                                                        <hr>
-                                                                        <span style="color: red;"><i
-                                                                                        class="fa-solid fa-book"></i> <i
-                                                                                        class="fa-solid fa-right-long"></i>
-                                                                                Comic Book</span>
-                                                                        <br> <span style="color: red;"><i
-                                                                                        class="fa-solid fa-book-open"></i></i>
-                                                                                <i class="fa-solid fa-right-long"></i>
-                                                                                Novel Picture Book</span>
-                                                                        <br> <span style="color: red;"><i
-                                                                                        class="fa-solid fa-book-bookmark"></i>
-                                                                                <i class="fa-solid fa-right-long"></i>
-                                                                                Visual Novel</span>
-                                                                        <br>
-
-
-                                                                </div>
-
-
-                                                                <div class="book">
-
-                                                                        <div class="table-box">
-                                                                           
-                                                                            <table>
-                                                                                <div class="page1">
-                                            
-                                                                                    <tr>
-                                                                                        <div style="margin-left: 200px;">
-                                                                                            <th style="" id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                            <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                            <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                            <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                            <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                           
-                                            
-                                                                                        </div>
-
-<!--  -->
-
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                     
-                                            
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                               
-                                            
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                            
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                               
-                                            
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                      
-                                            
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-
-                                            
-                                                                                        </div>
-                                                                                       
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                            
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                      
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                              
-                                            
-                                                                                        </div>
-                                                                                       
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                              
-                                            
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                     
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                               
-                                            
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                      
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                               
-                                            
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                       
-                                            
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                              
-                                            
-                                                                                        </div>
-                                                                                      
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <div>
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                               
-                                                                                        </div>
-                                                                                        <div style="">
-                                                                                                <th id="textbox" title="XXX"><a href="Filenotfound.html"><img style="margin-left: 80px;" src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img  src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                                <th title="XXX"><a href="Filenotfound.html"><img src="icons/xxx.jpeg" alt=""></a></th>
-                                                                                             
-                                            
-                                                                                        </div>
-                                            
-                                                                                    </tr>
-                                            
-                                            
-                                            
-                                            
-                                                                                </div>
-                                                                                <tr>
-                                                                                    <div style="margin-left: 45%; position: relative; top: -10px;">
-                                                                                        LXXI-CXL
-                                            
-                                                                                    </div>
-                                                                                    <div>
-                                                                                        <div style="margin-left: -60%; margin-top: -28px;">
-                                                                                            I-LXX
-                                            
-                                                                                        </div>
-                                                                                    </div>
-                                                                                    <div>
-                                            
-                                                                                    </div>
-                                            
-                                                                                </tr>
-                                            
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
-                                            
-
-
-
-
-                                                        </th>
-
-
-
-
-
-
+                                    </div>
                                 </th>
-                        </tr>
-                </table>
-                <img src="pixels/date.png" alt="">
+                            </tr>
+                        </table>
+                        <img src="pixels/date.png" alt="">
 
-                <div style=" background: rgb(255, 255, 255); color: rgb(168, 168, 168);"> <img src="pixels/plant.png"
-                                alt="">
-                        Copyright © 2024 Skullmare All rights reserved. <img src="pixels/plant.png" alt=""></div>
-                </div>
+                        <div style=" background: rgb(255, 255, 255); color: rgb(168, 168, 168);"> <img
+                                src="pixels/plant.png" alt="">
+                            Copyright © 2024 Skullmare All rights reserved. <img src="pixels/plant.png" alt=""></div>
+                        </div>
+                </th>
+            </tr>
+        </table>
+    </center>
+    <script src="character.js"></script>
+    <script>
+        let currentPage = 0;
+        const slideDistance = 470; // Adjust this value to control the slide distance
 
-        </center>
+        function nextSlide() {
+            currentPage++;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentPage--;
+            updateSlide();
+        }
+
+        function updateSlide() {
+            const slideWidth = document.querySelector('.Book4').offsetWidth;
+            const transformValue = -currentPage * slideDistance + 'px';
+            document.querySelector('.pages-container').style.transform = 'translateX(' + transformValue + ')';
+        }
+
+        // Adding click event listeners to the Book4 div
+        document.querySelector('.Book4 .next').addEventListener('click', nextSlide);
+        document.querySelector('.Book4 .prev').addEventListener('click', prevSlide);
+    </script>
 
 
 </body>
